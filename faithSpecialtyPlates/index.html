@@ -6,161 +6,764 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
 <title>Index</title>
-
 <style>
-	header{
-		header 
+	/*************************************TYPOGRAPHY***********************************/
+	
+	body, p {
+    font-family: Montserrat, sans-serif;
+	font-style:normal;
+	color:#5b4618;
+}
+		h1{
+	font-family: Bold Roboto, sans-serif;
+	font-style:normal;
+	font-size: 2.5rem;
+		padding:2%;
+}
+	h2{
+	font-style:normal;
+	font-size: 1.75em;
+		padding:10px;
+}
+	h2 bold{
+		font-size: 2.25em;
+	}
+	h3{
+	font-style:normal;
+	font-size: 1.5rem;
+		padding:25px;
+}
+	h5{
+		font-style:normal;
+		font-size: 1rem;
+	}
+	h6{
+		font-style:normal;
+		font-size: 0.5rem;
+	}
+	p{
+		font-style:normal;
+	font-size: 1rem;
+	}
+
+	em{
+		color:#520101;
+		font-style: normal;
+	}
+	
+/*************************************HEADER & NAVIGATION******************************/
+	header
 		{
             width: 100%;
-            height: 225px;
-			border: 1px solid red;
+            height: 100px;
+			background-color: #f1f1f0;
         }
-		main{
+	nav
+		{
+			text-transform: uppercase;
+        }
+	.navbar-light .navbar-nav .nav-link {
+			font: bold 1.4rem Roboto, sans-serif;
+			color: #520101;
+		}
+	.navbar-light .navbar-nav .nav-link.active{
+		color: #bc2134;
+		}
+	.navbar-fixed-top{
+  		position: fixed;
+		}
+	#hamburgerMenuBar{
+		margin-top:-10%;
+		width:50px;
+	}
+	
+/*************************************MAIN********************************************/
+	main{
+		width: 100%;
+        height: 850px;
+		background-color: #221A09;
+		color:#F1F1F0;
+		}
+		.mImg{
+		height: 260px;
+		display: block;
+		margin: 10% 1% 0% 4%;
+		padding: 2% 1% 5% 1%;
+	}
+	
+	.mainText{
+		margin: -17% 2% 5% 0%;
+		padding-right:8%
+	}
+	.cta {
+  border-radius: 7px;
+  background: #bc2134;
+  padding:40px 50px 40px 50px;
+  margin: 0px 0px 0px 27%;
+  color: white; }
+	
+/*************************************3-COLUMN SECTION******************************/
+	section:first-of-type {
+			width: 100%;
+            height: auto;
+			background-color: #f1f1f0;
+			color: #5B4618;
+	}
+	article a{
+		color: #520101;
+	}
+	
+/*************************************FEATURED SPECIALTY PLATES*********************/
+	#fsp{
+			width: 100%;
+            height: 750px;
+			background-color: #221A09;
+			color: #f1f1f0;
+		}
+	.plate{
+		height: 100px;
+	}
+	
+/*************************************ORDER NOW*************************************/
+	#orderNow {
 			width: 100%;
             height: 850px;
-			border: 1px solid blue;
+			background-color: #f1f1f0;
 		}
-		section:first-of-type {
-			width: 100%;
-            height: 950px;
-			border: 1px solid green;
+	.wallPlates{
+		width: 475px;
+		margin-left:4%;
 	}
-		section:nth-of-type(2) {
+
+/*************************************TESTIMONIALS********************************/
+	#testimonials {
 			width: 100%;
+            height: 555px;
+			background-color: #221A09;
+			color: #f1f1f0;
+		}
+	.slide{
+		height: 45px;
+	}
+	
+/*************************************FOOTER*************************************/
+footer {
+			width: 100%;
+            height: 310px;
+			background-color: #5b4618;
+			color: #f1f1f0;
+		}
+	.logo{
+		width: 300px;
+		height: auto;
+	}
+
+	.logo2{
+		display:none;
+	}
+	.copy{
+		width: 15px;
+	}
+	
+	/************************************MD SCREEN PROPERTIES**********************************/
+@media (min-width: 768px) {
+/***************Typography***************/
+			h1{
+	font-size: 3.75em;
+		padding:25px;
+}
+		h2{
+	font-size: 2em;
+}
+	h3{
+	font-size: 1.5rem;
+}
+	h6{
+	font-size: 0.75em;
+}
+	p{
+	font-size: 1rem;
+}
+	
+/***************Main***************/
+	main{
+        height: auto;
+		padding-bottom: 5%;
+		margin-top:-15%;
+		}
+		.mImg{
+		height: 300px;
+		margin: 13% 0% 5% 2%;
+		padding: 0% 4% 2% 4%;
+	}
+	.cta{
+		padding:20px 30px 20px 30px;
+		margin-left:1%;
+	}
+	
+/***************FSP***************/
+		#fsp{
+            height: 550px;
+			overflow:hidden;
+		}
+	.plate{
+		width: 250px;
+		height: auto;
+	}
+/***************Order Now**********/
+	#orderNow{
+        height: auto;
+		padding-bottom: 5%;
+	}
+	.wallPlates{
+		width: 95%;
+		padding-left:5%;
+	}
+
+/***************Testionials********/
+	#testimonials {
+        height: auto;
+	}
+	.review{
+		width:370px;
+		height:320px;
+		overflow: auto;
+	}
+	.slide{
+		height:240px;
+	}
+	
+/***************Footer*************/
+	
+	footer {
+    height: 200px;
+	}
+	.logo1WAdd{
+	display:none;
+	}
+	.logo2{
+		display:block;
+	}
+	.copySec{
+		width: 300px;
+		float:left;
+		margin-top:1%;
+	}
+/***************end @media 992*************/
+}
+
+/************************************LGR SCREEN PROPERTIES**********************************/
+@media (min-width: 992px) {
+/***************Typography***************/
+			h1{
+	font-size: 4rem;
+		padding:25px;
+}
+		h2{
+	font-size: 2.5em;
+}
+	h3{
+	font-size: 1.5rem;
+}
+	h6{
+	font-size: 0.75em;
+}
+	p{
+	font-size: 1rem;
+}
+	
+/***************Main***************/
+	main{
+        height: auto;
+		padding-bottom: 5%;
+		margin-top:-15%;
+		}
+		.mImg{
+		height: 300px;
+		margin: 13% 0% 0% 7%;
+		padding: 0% 4% 2% 4%;
+	}
+	.cta{
+		padding:20px 30px 20px 30px;
+		margin-left:1%;
+	}
+	
+/***************FSP***************/
+		#fsp{
+            height: 550px;
+			overflow:hidden;
+		}
+	.plate{
+		width: 250px;
+		height: auto;
+	}
+/***************Order Now**********/
+	#orderNow{
+        height: auto;
+		padding-bottom: 5%;
+	}
+	.wallPlates{
+		width: 95%;
+		padding-left:5%;
+	}
+
+/***************Testionials********/
+	#testimonials {
+        height: 900px;
+	}
+	.review{
+		width:370px;
+		height:320px;
+		overflow: auto;
+	}
+	.slide{
+		height:240px;
+	}
+	
+/***************Footer*************/
+	
+	footer {
+            height: 300px;
+		}
+	.logo{
+		width: 425px;
+		margin-left:10%;
+		padding-right: 2%;
+		border-right: 3px solid white;
+	}
+	.ftrRtSec{
+		width:200px;
+		margin-top: -9%;
+		padding-top:2%;
+		padding-left: 53%;
+	}
+	.copySec{
+		width: 300px;
+		float:left;
+		margin-top:1%;
+	}
+/***************end @media 992*************/
+}
+
+@media (min-width: 1200px) {
+/***************Typography***************/
+			h1{
+	font-size: 4rem;
+		padding:25px;
+}
+		h2{
+	font-size: 2.5em;
+}
+	h3{
+	font-size: 1.5rem;
+}
+	h6{
+	font-size: 0.75em;
+}
+	p{
+	font-size: 1rem;
+}
+	
+/***************Main***************/
+	/*main{
+        height: auto;
+		padding-bottom: 5%;
+		margin-top:-15%;
+		}*/
+		.mImg{
+		height: 275px;
+		/*margin: 13% 0% 0% 2%;
+		padding: 0% 4% 2% 4%;*/
+	}
+	.cta{
+		/*padding:20px 30px 20px 30px;
+		margin-left:1%;*/
+	}
+	
+/***************FSP***************/
+		#fsp{
+            height: 550px;
+			overflow:hidden;
+		}
+	.plate{
+		width: 250px;
+		height: auto;
+	}
+/***************Order Now**********/
+	#orderNow{
+        height: auto;
+		padding-bottom: 5%;
+	}
+	.wallPlates{
+		width: 95%;
+		padding-left:5%;
+	}
+
+/***************Testionials********/
+	#testimonials {
+        height: 900px;
+	}
+	.review{
+		width:370px;
+		height:320px;
+		overflow: auto;
+	}
+	.slide{
+		height:240px;
+	}
+	
+/***************Footer*************/
+	
+	footer {
+            height: 300px;
+		}
+	.logo{
+		width: 425px;
+		margin-left:10%;
+		padding-right: 2%;
+		border-right: 3px solid white;
+	}
+	.ftrRtSec{
+		width:200px;
+		margin-top: -9%;
+		padding-top:2%;
+		padding-left: 53%;
+	}
+	.copySec{
+		width: 300px;
+		float:left;
+		margin-top:1%;
+	}
+/***************end @media 1200*************/
+}
+
+@media (min-width: 2556px) {
+/***************Typography***************/
+	h1{
+	font-size: 5rem;
+}
+	h2{
+	font-size: 3em;
+}
+	h3{
+	font-size: 2rem;
+}
+	h6{
+	font-size: 0.75em;
+}
+	p{
+	font-size: 1.5rem;
+}
+	
+/***************Main***************/
+	main{
+        height: 750px;
+		margin-top:5%;
+		}
+		.mImg{
+		height: 450px;
+		margin: 6% 0% 0% 2%;
+	}
+	
+/***************3-column**********/
+		section:first-of-type {
+            height: 1250px;
+		}
+
+/***************FSP***************/
+		#fsp{
             height: 450px;
-			border: 1px solid teal;
 		}
-		section:nth-of-type(3) {
-			width: 100%;
-            height: 1480px;
-			border: 1px solid orange;
+
+/***************Testionials*******/
+	#testimonials {
+        height: 550px;
+	}
+	
+/***************Footer************/
+	
+	footer {
+            height: 400px;
 		}
-		section:nth-of-type(4) {
-			width: 100%;
-            height: 425px;
-			border: 1px solid red;
-		}
-		footer {
-			width: 100%;
-            height: 280px;
-			border: 1px solid red;
-		}
-		
+
+	.logo{
+		margin-top: 6%;
+		padding-right: 4%;
+	}
+
+	.ftrRtSec{
+		margin-top:-104%;
+		padding-top:0%;
+		padding-left: 52%;
+	}
+	.copySec{
+		margin-left:-160%;
+		margin-top:-90%;
+		overflow: hidden;
+	}
+/***************end @media 2556*************/
+}
+
 </style>
 </head>
 <body>
 <!---Navigation--->
 	<header>
-		<a href="/"><img src="images/faithSpecialtyLogo.png" alt="Faith Specialty Plates Logo" /></a>
-	<navigation>
-	<div class="container">
-		<ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Featured</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  		<a class="navbar-brand" href="/"><img class="float-left w-75" src="images/faithSpecialtyLogo.png" alt="Faith Specialty Plates Logo" /></a>
+			<a class="navbar-item" href="/"><img class="float-right d-md-none" id="hamburgerMenuBar" src="images/hamburgerMenuBar.png" alt="Faith Specialty Plates Logo" /></a>
+  		<div class="collapse navbar-collapse">
+    	<ul class="navbar-nav w-auto">
+     		<li><a class="nav-item nav-link active pr-5" href="#">Home</a></li>
+      		<li><a class="nav-item nav-link pr-5" href="#">About</a></li>
+	  		<li><a class="nav-item nav-link pr-5" href="#">Featured</a></li>
+			<li><a class="nav-item nav-link pr-5" href="#">Contact</a></li>
+    	</ul>
 		</div><!---container --->
-	</navigation>
-		</header>
+	</nav>
+</header>
 	
 <!---Main section--->
 	<main>
-	<a href="/"><img src="images/faithSpecialtyPlate.png" alt="Faith Specialty Plate" /></a>
+		<div class="mImg pr-5">
+			<a href="/"><img class="mImg w-auto float-left" src="images/faithSpecialtyPlate.png" alt="Faith Specialty Plate" /></a>
+		</div>
+		<div class="mainText ml-5 pt-4">
 		<h1>Faith Specialty Plates</h1>
 		<h2>Faith Specialty Plates is a non-profit that helps to inspire and support different organizations that put God first in their mission to help, connect, and bring people together…</h2>
+			<br/>
 		<button id="readM" class="cta" type="button">Read More</button>
+		</div>
 	</main>
 	
 <!---3 columns--->
 	<section>
-		<div class="container">
-	<article>
-		<a href="/"><img src="images/faithSpecialtyPlatesIcon.png" alt="Faith Specialty Plates icon" /></a>
-		<h2>Faith Specialty Plates</h2>
-		<h3>We are proudly non-profit. Faith Specialty Plates is the only specialty plate organization that provides online convenience for buying Faith themed plates and connecting you to your faithful charity. <a href="/">About each specialty plate.</a></h3>
+		<div class="container-fluid">
+			<div class="row">
+			
+<!--article 1-->
+	<article class="col-md-4">
+		<a href="/"><img class="ctaImg image-fluid w-75 mt-5 ml-5 pb-5" src="images/faithSpecialtyPlatesIcon.png" alt="Faith Specialty Plates icon" /></a>
+		<h2 class="text-center mt-4"><em><b>Faith Specialty Plates</b></em></h2>
+		<h3 class="pl-5 pr-5 pb-5">We are proudly non-profit. Faith Specialty Plates is the only specialty plate organization that provides online convenience for buying Faith themed plates and connecting you to your faithful charity. <u><a href="/">About each specialty plate.</a></u></h3>
 		</article>
-		<article>
-		<a href="/"><img src="images/patrick-tomasso-nWvWBV0sv04-unsplash.jpg" alt="woman charging something on her credit card." /></a>
-		<h2>Select A Plate</h2>
-		<h3>Get inspired and give support, to the many who serve one another with humanitarian kindness not discriminating in gender, race, faith, or background. <a href="/">Buy your Specialty Plate TODAY</a> and give support.</h3>
+			
+<!--article 2-->
+		<article class="col-md-4">
+		<a href="/"><img class="ctaImg image-fluid w-75 mt-5 ml-5 pb-5" src="images/ccOrder.png" alt="woman charging something on her credit card." /></a>
+		<h2 class="text-center mt-2"><em><b>Select A Plate</b></em></h2>
+		<h3 class="pl-5 pr-5 pb-5">Get inspired and give support, to the many who serve one another with humanitarian kindness not discriminating in gender, race, faith, or background. <u><a class="text-decoration" href="/">Buy your Specialty Plate TODAY</a></u> and give support.</h3>
 		</article>
-		<article>
-		<a href="/"><img src="images/artem-beliaikin-pPzQP35zh4o-unsplash.jpg" alt="Special Deal sign in red" /></a>
-		<h2>25% OFF</h2>
-		<h3>25% OFF your order on these select specialty plates. 
+			
+<!--article 3-->
+		<article class="col-md-4">
+		<a href="/"><img class="ctaImg image-fluid w-75 mt-5 ml-5 pb-5" src="images/specialDeal.png" alt="Special Deal sign in red" /></a>
+		<h2 class="text-center mt-4"><em><b>25% OFF</b></em></h2>
+		<h3 class="pl-5 pr-5 pb-5">25% OFF your order on these select specialty plates. 
 		<br/><br/>
-		<a href="/">Act Now</a>
+		<u><a href="/">Act Now</a></u>
 		<br/><br/>
 		It’s Too Good to Miss OUT!</h3>
 		</article>
+				</div><!---row --->
 	</div><!---container --->
 	</section>
 	
 <!---Features Specialty Plates--->
 	<section id="fsp">
-		<h2>Featured Specialty Plates</h2>
-	<div class="container">
-		<button id="prev"><img src="images/arrowToLeft.png" alt="arrow pointing to the left icon" /></button>
+	<div class="container-fluid">
+	<div class="row">
+		<h1 class="mt-4 pb-5">Featured Specialty Plates</h1>
+	</div><!---row --->
+	<div class="row justify-content-center">	
+		
+<!--column 1, ARROW-->
+<!--<section class="col text-white bg-transparent">
+		<button class="float-left bg-transparent border-0" id="prev"><img src="images/arrowToLeft.png" alt="arrow pointing to the left icon" /></button>
+		</section>-->
+
+<!--column 2, PLATE-->
+		<section class="col col-md-auto bg-transparent border-0">
 		<figure>
-			<a href="/"><img src="images/crsPlate.png" alt="Faith Specialty Plate" /></a>
-		<figcaption>Figure 1: This is a caption in regards to a placeholder of 900 pixels wide by 400 in height.</figcaption>
+			<a href="/"><img class="plate image-fluid" src="images/crsPlate.png" alt="Faith Specialty Plate" /></a>
+	<figcaption class="text-center text-white">A Catholic Foundation</figcaption>
 			</figure>
-			<button id="next"><img src="images/arrowToRight.png" alt="arrow pointing to the right icon" /></button>
-		</div><!---container --->
 		</section>
+								
+<!--column 3, PLATE-->
+		<section class="col col-md-auto">
+		<figure>
+			<a href="/"><img class="plate image-fluid" src="images/obiPlate.png" alt="Faith Specialty Plate" /></a>
+	<figcaption class="text-center">A Christian Foundation</figcaption>
+			</figure>
+		</section>
+								
+<!--column 4, PLATE-->
+		<section class="col col-md-auto">
+		<figure>
+			<a href="/"><img class="plate image-fluid" src="images/mazonPlate.png" alt="Faith Specialty Plate" /></a>
+	<figcaption class="text-center">A Jewish Foundation</figcaption>
+			</figure>
+		</section>
+								
+<!--column 5, PLATE-->
+		<section class="col col-lg-auto">
+		<figure>
+			<a href="/"><img class="plate image-fluid" src="images/mercyUSAPlate.png" alt="Faith Specialty Plate" /></a>
+	<figcaption class="text-center">An Islamic Foundation</figcaption>
+			</figure>
+		</section>
+								
+<!--column 6, PLATE-->
+		<section class="col col-lg-auto">
+		<figure>
+			<a href="/"><img class="plate image-fluid" src="images/tzuPlate.png" alt="Faith Specialty Plate" /></a>
+	<figcaption class="text-center">A Buddhist Foundation</figcaption>
+			</figure>
+		</section>
+								
+<!--column 7, PLATE-->
+		<section class="col col-lg-auto">
+		<figure>
+			<a href="/"><img class="plate image-fluid" src="images/sewaPlate.png" alt="Faith Specialty Plate" /></a>
+	<figcaption class="text-center">A Hindu Foundation</figcaption>
+			</figure>
+		</section>
+					
+<!--column 8, PLATE-->
+		<section class="col col-lg-auto">
+		<figure>
+			<a href="/"><img class="plate image-fluid" src="images/fspPlate.png" alt="Faith Specialty Plate" /></a>
+	<figcaption class="text-center">Faith Specialty Plate</figcaption>
+			</figure>
+		</section>
+		
+<!--column 9, PLATE-->
+		<section class="col col-md-1"></section>
+			
+<!--column 9, ARROW-->
+	<!--<section class="col">
+		<button class="float-right bg-transparent border-0" id="next"><img src="images/arrowToRight.png" alt="arrow pointing to the right icon" /></button>
+		</section>-->
+		
+	</div><!---row --->
+	</div><!---container --->
+	</section>
 	
 <!---Order Now--->
-	<section>
-		<article>
-			<div class="container">
-			<a href="/"><img src="images/semen-borisov-Kng5Nrbi3UM-unsplash.png" alt="A display of 24 state tags" /></a>
-				<h3>
-					<div class="caps">ORDER YOUR NEW SPECIALTY OR PERSONALIZED FLORIDA LICENSE PLATE ON LINE TODAY</div></h3>
-				<p><div class="caps">YOU CAN GET A FLORIDA SPECIALTY LICENSE PLATE FOR THE FIRST TIME; SWITCH YOUR EXISTING SPECIALTY LICENSE PLATE; SWITCH OUTSIDE OF YOUR REGISTRATION PERIOD OR CHOOSE TO INCLUDE YOUR ANNUAL REGISTRATION RENEWAL. YOU CAN ALSO PERSONALIZE YOUR LICENSE PLATE (CHOOSE THE CHARACTERS YOU WANT ON IT). ALL ONLINE - STEP UP TO THE PLATE TODAY!</div></p>
-			</div><!---container --->
-			<button id="orderN" class="orderNow" type="button">Order Now</button>
+	<section id="orderNow">
+		
+			<div class="container-fluid">
+				<article>
+			<a href="/"><img class="wallPlates mt-5 image-fluid" src="images/wallOfPlates.png" alt="A display of 24 state tags" /></a>
+				
+				<div class="text-capitalize ml-1"><h3><em>ORDER YOUR NEW SPECIALTY OR PERSONALIZED FLORIDA LICENSE PLATE ON LINE TODAY</em></h3></div>
+				<div class="text-capitalize ml-4 pr-2"><p>YOU CAN GET A FLORIDA SPECIALTY LICENSE PLATE FOR THE FIRST TIME; SWITCH YOUR EXISTING SPECIALTY LICENSE PLATE; SWITCH OUTSIDE OF YOUR REGISTRATION PERIOD OR CHOOSE TO INCLUDE YOUR ANNUAL REGISTRATION RENEWAL. YOU CAN ALSO PERSONALIZE YOUR LICENSE PLATE (CHOOSE THE CHARACTERS YOU WANT ON IT). ALL ONLINE - STEP UP TO THE PLATE TODAY!</p></div>
+			
+			<br />
+			<button id="orderN" class="cta orderNow" type="button">Order Now</button>
 		</article>
+				</div><!---container --->
 	</section>
-
+	
 <!---Testimonials--->
-<section id= "testimonials">
-	<div class="container">
-	<ul>
-    <li><div class="container"><img class="slide" src="images/jon-grogan-c_6UkpxsA-o-unsplash.jpg" alt="testimonial given by a man in his mid twenties"><h4>Jon Grogan</h4><p>Awesome service! Thank you; keep up the good work.</p></div></li>
-    <li><div class="container"><img class="slide" src="images/wonderlane-boiz-wQG66E-unsplash.jpg" alt="testimonial given by a father holding his daughter in his arms"><h4>Wonderlane Boiz</h4><p>I’m happy to support a charitable organization with a specialty plate. Thank you for all that you do.</p></div></li>
-    <li><div class="container"><img class="slide" src="images/kal-visuals-b1Hg7QI-zcc-unsplash.jpg" alt="testimonial given by a woman in her mid twenties"><h4> Kal Visuals</h4><p>Great Idea! Keep bringing people together.</p></div></li>
-	<li><div class="container"><img class="slide" src="images/sharon-mccutcheon-Z_t6gnbLmXA-unsplash.jpg" alt="testimonial given by a mother holding her baby and two friends at her side"><h4>Sharon McCutcheon</h4><p>We are thrilled to support CRS with a specialty plate. Thank you for great service!</p></div></li>
-	<li><div class="container"><img class="slide" src="images/zulmaury-saavedra-Z9GKfYmWOAM-unsplash.jpg" alt="testimonial given by a man in his early thirties"><h4>Zulmaury Saavedra</h4><p>Buying a specialty plate was the best idea I ever had. I’m so glad to have found you all!</p></div></li>
-	<li><div class="container"><img class="slide" src="images/omid-armin-UVx7Xx_b4a0-unsplash.jpg" alt="testimonial given by a woman in her early twenties"><h4>Omid Armin</h4><p>I bought a specialty plate last year and I love the way it looks on the car; its also a great conversation piece. I would recommend this to everyone.Thanks!</p></div></li>
-  </ul>
-</div><!---container --->
-</section>
+	<section id="testimonials">
+	<div class="container-fluid">
+	<div class="row">
+		<h1 class="mt-4 ml-1 pb-3">Testimonials</h1>
+	</div><!---row --->
+		
+	<div class="row justify-content-center ">	
+	<ul class="list-unstyled list-inline">
+
+<!--TESTIMONIAL1-->
+		<li class="list-inline-item">
+			<div class="review pl-3">
+			<img class="slide image-fluid float-left pr-3" src="images/jon-grogan-c_6UkpxsA-o-unsplash.jpg" alt="testimonial given by a man in his mid twenties">
+			<h5>Jon Grogan</h5><h6>Awesome service! Thank you; keep up the good work.</h6>
+			</div>
+		</li>
+								
+<!--TESTIMONIAL2-->
+		<li class="list-inline-item">
+			<div class="review pl-3">
+			<img class="slide image-fluid float-left pr-3" src="images/wonderlane-boiz-wQG66E-unsplash.jpg" alt="testimonial given by a father holding his daughter in his arms"><h5>Wonderlane Boiz</h5><h6>I’m happy to support a charitable organization with a specialty plate. Thank you for all that you do.</h6>
+			</div>
+		</li>
+								
+<!--TESTIMONIAL3-->
+		<li class="list-inline-item">
+			<div class="review pl-3">
+			<img class="slide image-fluid float-left pr-3" src="images/kal-visuals-b1Hg7QI-zcc-unsplash.jpg" alt="testimonial given by a woman in her mid twenties"/><h5>Kal Visuals</h5><h6>Great Idea! Keep bringing people together.</h6>
+		</div>
+		</li>
+								
+<!--TESTIMONIAL4-->
+		<li class="list-inline-item">
+			<div class="review pl-3">
+			<img class="slide image-fluid float-left pr-3" src="images/sharon-mccutcheon-Z_t6gnbLmXA-unsplash.jpg" alt="testimonial given by a mother holding her baby and two friends at her side"><h5>Sharon McCutcheon</h5><h6>We are thrilled to support CRS with a specialty plate. Thank you for great service!</h6>
+		</div>
+		</li>
+								
+<!--TESTIMONIAL55-->
+		<li class="list-inline-item">
+			<div class="review pl-3">
+			<img class="slide image-fluid float-left pr-3" src="images/foto-sushi-6anudmpILw4-unsplash.jpg" alt="testimonial given by a man in his early early fifties" ><h5>Zulmaury Saavedra</h5><h6>Buying a specialty plate was the best idea I ever had. I’m so glad to have found you all!</h6>
+			</div>
+		</li>
+								
+<!--TESTIMONIAL6-->
+		<li class="list-inline-item">
+			<div class="review pl-3">
+			<img class="slide image-fluid float-left pr-3" src="images/natalia-barros-3TnUCHoqMHM-unsplash.jpg" alt="testimonial given by a couple in thier early thirties"><h5>Omid Armin</h5><h6>I bought a specialty plate last year and I love the way it looks on the car; its also a great conversation piece. I would recommend this to everyone.Thanks!</h6>
+		</div>
+		</li>
+		
+	</ul>		
+	</div><!---row --->
+	</div><!---container --->
+	</section>
 
 <!---Footer--->
 	<footer>
-		<div class="container">
-			<section>
-		<a href="/"><img src="images/faithSpecialtyPlatesLogoWhite.png" alt="Faith Specialty Plates White Logo" /></a>
-				<h5><img src="images/copyright-512.png" alt="copyright icon" /><em>2020 Faith Specialty Plates</em></h5>
+<!--Logo1-->
+		<div class="container ">
+			<div class="row">
+				
+			<section class="logo1WAdd bg-transparent text-white">
+			<section class=" bg-transparent float-left mt-5 ml-5 mb-4 pt-4 pl-4 pr-5">
+		<a href="/"><img class="logo" src="images/faithSpecialtyPlatesLogoWhite.png" alt="Faith Specialty Plates White Logo"></a>
 		</section>
-			<section>
-				<h4 id="pipe">
-				<address>
+
+<!--Address-->
+				<h5 class="ml-4 mb-4 pr-5"
+				<address class="ml-4 mb-4 pr-5">
 					126 S. BraveHeart Street, 2nd Floor, Jacksonville, Fl 34567  
 				</address>
-					<br/><br/>
 					Toll Free: 881.123.4567
-				</h4>
+				</h5>
 			</section>
+			
+			<section class="logo2">
+				<a href="/"><img class="logo" src="images/faithSpecialtyPlatesWtLogo.png" alt="Faith Specialty Plates White Logo with cmpny address"></a>
+			</section>
+				
+<!--Copyright-->
+				<section class="copySec">
+				<h5 class="text-white ml-4 mt-3"><img class="copy" src="images/copyright-512.png" alt="copyright icon"/>
+					2020 Faith Specialty Plates</h5>
+				</section>
+			</div><!---row --->
 		</div><!---container --->
 	</footer>
 	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/main.js"></script>
+<!--	<script src="js/main.js"></script>-->
 	
 </body>
 </html>
