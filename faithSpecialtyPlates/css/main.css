@@ -1,0 +1,669 @@
+@charset "UTF-8";
+/* Featured Specialty Plates CSS Document */
+
+	/*************************************TYPOGRAPHY**********/
+	
+	body, p {
+    font-family: Montserrat, sans-serif;
+	font-style:normal;
+	color:#5b4618;
+}
+		h1{
+	font-family: Bold Roboto, sans-serif;
+	font-style:normal;
+	font-size: 2.5rem;
+		padding:2%;
+}
+	h2{
+	font-style:normal;
+	font-size: 1.75em;
+		padding:10px;
+}
+	h2 bold{
+		font-size: 2.25em;
+	}
+	h3{
+	font-style:normal;
+	font-size: 1.5rem;
+		padding:25px;
+}
+	h5{
+		font-style:normal;
+		font-size: 1rem;
+	}
+	h6{
+		font-style:normal;
+		font-size: 0.5rem;
+	}
+	p{
+		font-style:normal;
+	font-size: 1rem;
+	}
+
+	em{
+		color:#520101;
+		font-style: normal;
+	}
+	
+/*************************HEADER & NAVIGATION****************/
+	header
+		{
+            width: 100%;
+            height: 100px;
+			background-color: #f1f1f0;
+        }
+	nav
+		{
+			text-transform: uppercase;
+        }
+	.navbar-light .navbar-nav .nav-link {
+			font: bold 1.4rem Roboto, sans-serif;
+			color: #520101;
+		}
+	.navbar-light .navbar-nav .nav-link.active{
+		color: #bc2134;
+		}
+	.navbar-fixed-top{
+  		position: fixed;
+		}
+	#hamburgerMenuBar{
+		margin-top:-10%;
+		width:50px;
+	}
+/******************************************************************HOME***********************/
+/*************************************MAIN*********************/
+	main{
+		width: 100%;
+        height: 850px;
+		background-color: #221A09;
+		color:#F1F1F0;
+		margin-top:-4%;
+		}
+		.mImg{
+		height: 250px;
+		display: block;
+		margin: 10% 1% 0% 4%;
+		padding: 2% 1% 5% 1%;
+	}
+	
+	.mainText{
+		margin: -17% 2% 5% 0%;
+		padding-right:8%
+	}
+	.cta {
+  		border-radius: 7px;
+  		background: #bc2134;
+  		padding:40px 50px 40px 50px;
+  		margin: 0px 0px 0px 27%;
+  		color: white; }
+	
+/*************************************3-COLUMN SECTION********/
+	section:first-of-type {
+		width: 100%;
+        height: auto;
+		background-color: #f1f1f0;
+		color: #5B4618;
+	}
+	article a{
+		color: #520101;
+	}
+	
+/****************************FEATURED SPECIALTY PLATES********/
+	#fsp{
+		width: 100%;
+        height: 750px;
+		background-color: #221A09;
+		color: #f1f1f0;
+		}
+	.plate{
+		height: 100px;
+	}
+	
+/*************************************ORDER NOW***************/
+	#orderNow {
+		width: 100%;
+        height: 850px;
+		background-color: #f1f1f0;
+		}
+	.wallPlates{
+		width: 475px;
+		margin-left:4%;
+	}
+
+/*************************************TESTIMONIALS*************/
+	#testimonials {
+		width: 100%;
+        height: 555px;
+		background-color: #221A09;
+		color: #f1f1f0;
+		}
+	.slide{
+		height: 45px;
+	}
+	
+/*************************************FOOTER*****************/
+footer {
+		width: 100%;
+        height: 310px;
+		background-color: #5b4618;
+		color: #f1f1f0;
+		}
+	.logo{
+		width: 300px;
+		height: auto;
+	}
+	.logo2{
+		display:none;
+	}
+	.copy{
+		width: 15px;
+	}
+/*********************************************FEATURED & ON SALE******************************/
+/***********FEATURED & ONSALE********/
+	#featuredSP{
+		width: 100%;
+        height: auto;
+		color: #520101;
+		background-color: #f1f1f0;
+		margin-top:10%;
+		}
+	.noHSpace{
+		margin-top:-9%;
+		color: #520101;
+	}
+	.plates{
+		height: 250px;
+		margin-left:-7%;
+	}
+	.invisiblePlate{
+		display:none;
+	}
+	.orderNow {
+  		padding:60px 70px 60px 70px;
+  		margin: 0px 0px 0px 20%;
+		font-size: 1.5rem;
+	}
+
+/***************Testionials********/
+	#FTestimonials {
+  		width: 100%;
+        height: 500px;
+		color: #520101;
+		background-color: #f1f1f0;
+		}
+	.slides{
+		height: 75px;
+		padding-bottom: 2%;
+	}
+
+/***************Footer********/
+.unmarginedFooter{
+	margin-top:825%;
+}
+	
+/******************************MD SCREEN PROPERTIES***************************/
+/**************************HOME*************/
+@media (min-width: 768px) {
+/***************Typography***************/
+	h1{
+		font-size: 3.75em;
+		padding:25px;
+	}
+	h2{
+		font-size: 1.75em;
+	}
+	h3{
+		font-size: 1.5rem;
+	}
+	h6{
+		font-size: 0.75em;
+	}
+	p{
+		font-size: 1rem;
+	}
+	
+/***************Header***************/
+	header{
+		height:auto;
+	}
+	
+/***************Main***************/
+	main{
+        height: auto;
+		padding-bottom: 5%;
+		margin-top:-15%;
+	}
+	.mImg{
+		height: 300px;
+		margin: 13% 0% 5% 2%;
+		padding: 0% 4% 2% 4%;
+	}
+	.cta{
+		padding:20px 30px 20px 30px;
+		margin-left:1%;
+	}
+	
+/***************FSP***************/
+	#fsp{
+    	height: 650px;
+		overflow:hidden;
+	}
+	.plate{
+		width: 225px;
+		height: auto;
+	}
+	figcaption{
+		text-align: left;
+	}
+/***************Order Now**********/
+	#orderNow{
+    	height: auto;
+		padding-bottom: 5%;
+	}
+	.wallPlates{
+		width: 90%;
+	}
+
+/***************Testionials********/
+	#testimonials {
+        height: auto;
+	}
+	.review{
+		width:370px;
+		height:320px;
+		overflow: auto;
+	}
+	.slide{
+		height:240px;
+	}
+	
+/***************Footer*************/
+	footer {
+    	height: 225px;
+	}
+	.logo1WAdd{
+		display:none;
+	}
+	.logo2{
+		display:block;
+		margin-top: 10%
+	}
+	.logo2Img{
+		width:700px;
+	}
+	.copySec{
+		width: 300px;
+		float:left;
+		margin-top:4%;
+	}
+	
+/*********************FEATURED & ON SALE*********/
+/***********FEATURED, 25%OFF**********/
+	#featuredSP{
+        height: auto;
+		margin-top:15%;
+		}
+	.noHSpace{
+		margin-top:15%;
+		margin-left: -55%;
+	}
+
+	.plates{
+		width:auto;
+		height: 150px;
+		margin-left:0%;
+	}
+	.cta {
+  		padding:20px;
+  		margin: 0px 0px 0px 28%;
+		font-size: 1rem;
+	}
+		.invisiblePlate{
+		display:block;
+	}
+
+/***************Testionials********/
+	#FTestimonials {
+        height: auto;
+		margin-top: 5%;
+		}
+	.reviews{
+		width:200px;
+		height:320px;
+		margin:10% 0% -30% 5%;
+		overflow: auto;
+	}
+	.slides{
+		height:100px;
+	}
+	
+/***************Footer********/
+.unmarginedFooter{
+	margin-top:325%;
+}
+	
+/***************end @media 786*************/
+}
+
+/********************************LGR SCREEN PROPERTIES**************************/
+@media (min-width: 992px) {
+/***************Typography***************/
+	h1{
+		font-size: 4rem;
+	}
+	h2{
+		font-size: 2.5em;
+	}
+
+/***************Main***************/
+	.mImg{
+		height: 375px;
+		margin: 13% 0% 5% 1%;
+		padding: 0% 4% 0% 4%;
+	}
+	
+/***************FSP***************/
+	#fsp{
+      height: 1300px;
+		}
+	.plate{
+		width: 465px;
+	}
+/***************Order Now**********/
+	.wallPlates{
+		width: 85%;
+		padding-left:5%;
+	}
+
+/***************Testionials********/
+	.review{
+		margin-left:30%;
+	}
+
+/***************Footer*************/
+	.logo2{
+		margin-top: 7%;
+		margin-left:8%;
+	}
+	.logo2Img{
+		width:800px;
+	}
+	.copySec{
+		margin-top:2%;
+		margin-left:0%;
+	}
+	
+/*********************FEATURED & ONSALE***************/
+/***********FEATURED, 25%OFF**********/
+	#featuredSP{
+        height: auto;
+		margin-top:15%;
+		margin-left:10%;
+		}
+		.noHSpace{
+		margin-top:-10%;
+		margin-left: 0%;
+	}
+
+	.plates{
+		width:auto;
+		height: 133px;
+		padding:2;
+	}
+	figcaption{
+		font-size: 0.9rem;
+	}
+	.cta {
+  		padding:10px;
+  		margin: 0px 0px 0px 28%;
+		font-size: 1rem;
+	}
+		.invisiblePlate{
+		display:block;
+	}
+
+/***************Testionials********/
+	#FTestimonials {
+        height: 1593px;
+		border-left:1px solid black;
+		margin: 0% 0% 0% -10%;
+		width:125%;
+		}
+	.tstmnls{
+		font-size: 1.75rem;
+		padding:2%;
+		text-decoration: underline overline;
+	}
+	.reviews{
+		width:170px;
+		height:220px;
+		margin:10% 0% 2% 5%;
+		padding:0;
+		border-bottom:1px solid black;
+	}
+	.slides{
+		height:95px;
+	}
+	
+	/***************Footer********/
+.unmarginedFooter{
+	margin-top:163.5%;
+}
+	
+/***************end @media 992*************/
+}
+
+@media (min-width: 1200px) {
+/***************Typography***************/
+	h1{
+		font-size: 4rem;
+	}
+	h2{
+		font-size: 2.5em;
+	}
+	
+/***************Main***************/
+	.mImg{
+		height: 450px;
+		margin: 13% 0% 5% 2%;
+		padding: 0% 4% 0% 4%;
+	}
+	
+/***************FSP***************/
+	#fsp{
+      	height: 875px;
+	}
+	.plate{
+		width: 370px;
+		height: auto;
+	}
+/***************Order Now**********/
+	.wallPlates{
+		width: 85%;
+		padding-left:5%;
+	}
+
+/***************Testionials********/
+	#testimonials {
+        height: auto;
+	}
+	.review{
+		width:370px;
+		height:320px;
+		overflow: auto;
+		margin-left:5%;
+	}
+
+/***************Footer*************/
+	.logo2{
+		margin-top: 7%;
+		margin-left:8%;
+	}
+	.logo2Img{
+		width:800px;
+	}
+	.copySec{
+		margin-top:2%;
+	}	
+	
+/*********************FEATURED & ONSALE***************/
+/***********FEATURED, 25%OFF**********/
+	#featuredSP{
+        height: auto;
+		margin-top:15%;
+		margin-left:10%;
+		overflow:hidden;
+		}
+		.noHSpace{
+		margin-top:15%;
+		margin-left: -50%;
+	}
+
+	.plates{
+		width:auto;
+		height: 133px;
+		padding:2;
+	}
+	figcaption{
+		font-size: 0.9rem;
+	}
+	.cta {
+  		padding:10px;
+  		margin: 0px 0px 0px 28%;
+		font-size: 1rem;
+	}
+		.invisiblePlate{
+		display:block;
+	}
+
+/***************Testionials********/
+	#FTestimonials {
+        height: 1593px;
+		border-left:1px solid black;
+		margin: 5% 0% 0% -5%;
+		width:100%;
+		}
+	.tstmnls{
+		font-size: 1.75rem;
+		padding:2%;
+		text-decoration: underline overline;
+	}
+	.reviews{
+		width:170px;
+		height:225px;
+		margin:10% 0% 2% 5%;
+		padding:0;
+		border-bottom:1px solid black;
+	}
+	.slides{
+		height:100px;
+	}
+	
+	/***************Footer********/
+.unmarginedFooter{
+	margin-top:138.5%;
+	width:100%;
+}
+
+/***************end @media 1200*************/
+}
+
+@media (min-width: 2400px) {
+/***************Main***************/
+	.mImg{
+		height: 600px;
+		margin: 12% 0% 5% 3%;
+		padding: 3% 3% 3% 3%;
+	}
+	.cta{
+		margin-top:2%;
+	}
+	
+/***************FSP***************/
+	#fsp{
+     	 height: 450px;
+	}
+	.plate{
+		width: 312px;
+	}
+
+/***************Testionials********/
+	.review{
+		margin-left:0%;
+	}
+
+/***************Footer*************/
+	footer {
+    	height: 250px;
+	}
+	.copySec{
+		margin-left: 35%;
+	}	
+	
+	/***********FEATURED, 25%OFF**********/
+	#featuredSP{
+        height: auto;
+		margin-top:15%;
+		margin-left:10%;
+		overflow:hidden;
+		}
+		.noHSpace{
+		margin-top:15%;
+		margin-left: -50%;
+	}
+
+	.plates{
+		width:auto;
+		height: 133px;
+		padding:2;
+	}
+	figcaption{
+		font-size: 0.9rem;
+	}
+	.cta {
+  		padding:10px;
+  		margin: 0px 0px 0px 28%;
+		font-size: 1rem;
+	}
+		.invisiblePlate{
+		display:block;
+	}
+
+/***************Testionials********/
+	#FTestimonials {
+        height: 1593px;
+		border-left:1px solid black;
+		margin: -9% 0% 0% -5%;
+		width:100%;
+		}
+	.tstmnls{
+		font-size: 1.75rem;
+		padding:2%;
+		text-decoration: underline overline;
+	}
+	.reviews{
+		width:170px;
+		height:225px;
+		margin:10% 0% 2% 5%;
+		padding:0;
+		border-bottom:1px solid black;
+	}
+	.slides{
+		height:100px;
+	}
+	
+	/***************Footer********/
+.unmarginedFooter{
+	margin-top:136.5%;
+	width:100%;
+}
+	
+	/***************Footer********/
+.unmarginedFooter{
+	margin-top:136.5%;
+	width:100%;
+}
+	
+
+/***************end @media 2400*************/
+}

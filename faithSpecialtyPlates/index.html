@@ -8,398 +8,10 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-<title>Index</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<title>Home | Featured Specialty Plates</title>
 <style>
-	/*************************************TYPOGRAPHY***********************************/
 	
-	body, p {
-    font-family: Montserrat, sans-serif;
-	font-style:normal;
-	color:#5b4618;
-}
-		h1{
-	font-family: Bold Roboto, sans-serif;
-	font-style:normal;
-	font-size: 2.5rem;
-		padding:2%;
-}
-	h2{
-	font-style:normal;
-	font-size: 1.75em;
-		padding:10px;
-}
-	h2 bold{
-		font-size: 2.25em;
-	}
-	h3{
-	font-style:normal;
-	font-size: 1.5rem;
-		padding:25px;
-}
-	h5{
-		font-style:normal;
-		font-size: 1rem;
-	}
-	h6{
-		font-style:normal;
-		font-size: 0.5rem;
-	}
-	p{
-		font-style:normal;
-	font-size: 1rem;
-	}
-
-	em{
-		color:#520101;
-		font-style: normal;
-	}
-	
-/*************************************HEADER & NAVIGATION******************************/
-	header
-		{
-            width: 100%;
-            height: 100px;
-			background-color: #f1f1f0;
-        }
-	nav
-		{
-			text-transform: uppercase;
-        }
-	.navbar-light .navbar-nav .nav-link {
-			font: bold 1.4rem Roboto, sans-serif;
-			color: #520101;
-		}
-	.navbar-light .navbar-nav .nav-link.active{
-		color: #bc2134;
-		}
-	.navbar-fixed-top{
-  		position: fixed;
-		}
-	#hamburgerMenuBar{
-		margin-top:-10%;
-		width:50px;
-	}
-	
-/*************************************MAIN********************************************/
-	main{
-		width: 100%;
-        height: 850px;
-		background-color: #221A09;
-		color:#F1F1F0;
-		margin-top:-4%;
-		}
-		.mImg{
-		height: 260px;
-		display: block;
-		margin: 10% 1% 0% 4%;
-		padding: 2% 1% 5% 1%;
-	}
-	
-	.mainText{
-		margin: -17% 2% 5% 0%;
-		padding-right:8%
-	}
-	.cta {
-  		border-radius: 7px;
-  		background: #bc2134;
-  		padding:40px 50px 40px 50px;
-  		margin: 0px 0px 0px 27%;
-  		color: white; }
-	
-/*************************************3-COLUMN SECTION******************************/
-	section:first-of-type {
-		width: 100%;
-        height: auto;
-		background-color: #f1f1f0;
-		color: #5B4618;
-	}
-	article a{
-		color: #520101;
-	}
-	
-/*************************************FEATURED SPECIALTY PLATES*********************/
-	#fsp{
-		width: 100%;
-        height: 750px;
-		background-color: #221A09;
-		color: #f1f1f0;
-		}
-	.plate{
-		height: 100px;
-	}
-	
-/*************************************ORDER NOW*************************************/
-	#orderNow {
-		width: 100%;
-        height: 850px;
-		background-color: #f1f1f0;
-		}
-	.wallPlates{
-		width: 475px;
-		margin-left:4%;
-	}
-
-/*************************************TESTIMONIALS********************************/
-	#testimonials {
-		width: 100%;
-        height: 555px;
-		background-color: #221A09;
-		color: #f1f1f0;
-		}
-	.slide{
-		height: 45px;
-	}
-	
-/*************************************FOOTER*************************************/
-footer {
-		width: 100%;
-        height: 310px;
-		background-color: #5b4618;
-		color: #f1f1f0;
-		}
-	.logo{
-		width: 300px;
-		height: auto;
-	}
-	.logo2{
-		display:none;
-	}
-	.copy{
-		width: 15px;
-	}
-	
-/************************************MD SCREEN PROPERTIES**********************************/
-@media (min-width: 768px) {
-/***************Typography***************/
-	h1{
-		font-size: 3.75em;
-		padding:25px;
-	}
-	h2{
-		font-size: 1.75em;
-	}
-	h3{
-		font-size: 1.5rem;
-	}
-	h6{
-		font-size: 0.75em;
-	}
-	p{
-		font-size: 1rem;
-	}
-	
-/***************Main***************/
-	main{
-        height: auto;
-		padding-bottom: 5%;
-		margin-top:-15%;
-	}
-	.mImg{
-		height: 300px;
-		margin: 13% 0% 5% 2%;
-		padding: 0% 4% 2% 4%;
-	}
-	.cta{
-		padding:20px 30px 20px 30px;
-		margin-left:1%;
-	}
-	
-/***************FSP***************/
-	#fsp{
-    	height: 650px;
-		overflow:hidden;
-	}
-	.plate{
-		width: 225px;
-		height: auto;
-	}
-	figcaption{
-		text-align: left;
-	}
-/***************Order Now**********/
-	#orderNow{
-    	height: auto;
-		padding-bottom: 5%;
-	}
-	.wallPlates{
-		width: 90%;
-	}
-
-/***************Testionials********/
-	#testimonials {
-        height: auto;
-	}
-	.review{
-		width:370px;
-		height:320px;
-		overflow: auto;
-	}
-	.slide{
-		height:240px;
-	}
-	
-/***************Footer*************/
-	
-	footer {
-    	height: 225px;
-	}
-	.logo1WAdd{
-		display:none;
-	}
-	.logo2{
-		display:block;
-		margin-top: 10%
-	}
-	.logo2Img{
-		width:700px;
-	}
-	.copySec{
-		width: 300px;
-		float:left;
-		margin-top:4%;
-	}
-/***************end @media 992*************/
-}
-
-/************************************LGR SCREEN PROPERTIES**********************************/
-@media (min-width: 992px) {
-/***************Typography***************/
-	h1{
-		font-size: 4rem;
-	}
-	h2{
-		font-size: 2.5em;
-	}
-
-/***************Main***************/
-	.mImg{
-		height: 375px;
-		margin: 13% 0% 5% 1%;
-		padding: 0% 4% 0% 4%;
-	}
-	
-/***************FSP***************/
-	#fsp{
-      height: 1300px;
-		}
-	.plate{
-		width: 465px;
-	}
-/***************Order Now**********/
-	.wallPlates{
-		width: 85%;
-		padding-left:5%;
-	}
-
-/***************Testionials********/
-	.review{
-		margin-left:30%;
-	}
-
-/***************Footer*************/
-	.logo2{
-		margin-top: 7%;
-		margin-left:8%;
-	}
-	.logo2Img{
-		width:800px;
-	}
-	.copySec{
-		margin-top:2%;
-		margin-left:0%;
-	}
-/***************end @media 992*************/
-}
-
-@media (min-width: 1200px) {
-/***************Typography***************/
-	h1{
-		font-size: 4rem;
-	}
-	h2{
-		font-size: 2.5em;
-	}
-	
-/***************Main***************/
-	.mImg{
-		height: 450px;
-		margin: 13% 0% 5% 2%;
-		padding: 0% 4% 0% 4%;
-	}
-	
-/***************FSP***************/
-	#fsp{
-      	height: 875px;
-	}
-	.plate{
-		width: 370px;
-		height: auto;
-	}
-/***************Order Now**********/
-	.wallPlates{
-		width: 85%;
-		padding-left:5%;
-	}
-
-/***************Testionials********/
-	#testimonials {
-        height: auto;
-	}
-	.review{
-		width:370px;
-		height:320px;
-		overflow: auto;
-		margin-left:5%;
-	}
-
-/***************Footer*************/
-	.logo2{
-		margin-top: 7%;
-		margin-left:8%;
-	}
-	.logo2Img{
-		width:800px;
-	}
-	.copySec{
-		margin-top:2%;
-	}	
-/***************end @media 1200*************/
-}
-
-@media (min-width: 2400px) {
-/***************Main***************/
-	.mImg{
-		height: 600px;
-		margin: 12% 0% 5% 3%;
-		padding: 3% 3% 3% 3%;
-	}
-	.cta{
-		margin-top:2%;
-	}
-	
-/***************FSP***************/
-	#fsp{
-     	 height: 450px;
-	}
-	.plate{
-		width: 312px;
-	}
-
-/***************Testionials********/
-	.review{
-		margin-left:0%;
-	}
-
-/***************Footer*************/
-	footer {
-    	height: 250px;
-	}
-	.copySec{
-		margin-left: 35%;
-	}	
-/***************end @media 2400*************/
-}
-
 </style>
 </head>
 <body>
@@ -410,10 +22,10 @@ footer {
 			<a class="navbar-item" href="/"><img class="float-right d-md-none" id="hamburgerMenuBar" src="images/hamburgerMenuBar.png" alt="Faith Specialty Plates Logo" /></a>
   		<div class="collapse navbar-collapse">
     	<ul class="navbar-nav w-auto">
-     		<li><a class="nav-item nav-link active pr-5" href="#">Home</a></li>
-      		<li><a class="nav-item nav-link pr-5" href="#">About</a></li>
-	  		<li><a class="nav-item nav-link pr-5" href="#">Featured</a></li>
-			<li><a class="nav-item nav-link pr-5" href="#">Contact</a></li>
+     		<li><a class="nav-item nav-link active pr-5" href="index.html">Home</a></li>
+      		<li><a class="nav-item nav-link pr-5" href="about.html">About</a></li>
+	  		<li><a class="nav-item nav-link pr-5" href="featured.html">Featured</a></li>
+			<li><a class="nav-item nav-link pr-5" href="contact.html">Contact</a></li>
     	</ul>
 		</div><!---container --->
 	</nav>
@@ -422,13 +34,13 @@ footer {
 <!---Main section--->
 	<main>
 		<div class="mImg pr-5">
-			<a href="/"><img class="mImg w-auto float-left" src="images/faithSpecialtyPlate.png" alt="Faith Specialty Plate" /></a>
+			<a href="about.html"><img class="mImg w-auto float-left" src="images/faithSpecialtyPlate.png" alt="Faith Specialty Plate" /></a>
 		</div>
 		<div class="mainText ml-5 pt-4">
 		<h1>Faith Specialty Plates</h1>
 		<h2>Faith Specialty Plates is a non-profit that helps to inspire and support different organizations that put God first in their mission to help, connect, and bring people together…</h2>
 			<br/>
-		<button id="readM" class="cta" type="button">Read More</button>
+		<a href="about.html"><button id="readM" class="cta" type="button">Read More</button></a>
 		</div>
 	</main>
 	
@@ -439,25 +51,25 @@ footer {
 			
 <!--article 1-->
 	<article class="col-md-4">
-		<a href="/"><img class="ctaImg image-fluid w-75 mt-5 ml-4 pb-5" src="images/faithSpecialtyPlatesIcon.png" alt="Faith Specialty Plates icon" /></a>
+		<a href="about.html"><img class="ctaImg image-fluid w-75 mt-5 ml-4 pb-5" src="images/faithSpecialtyPlatesIcon.png" alt="Faith Specialty Plates icon" /></a>
 		<h2 class="text-left mt-4"><em><b>Faith Specialty Plates</b></em></h2>
-		<h3 class="pl-3 pr-2 pb-5"><small>We are proudly non-profit. Faith Specialty Plates is the only specialty plate organization that provides online convenience for buying Faith themed plates and connecting you to your faithful charity. <u><a href="/">About each specialty plate.</a></u></small></h3>
+		<h3 class="pl-3 pr-2 pb-5"><small>We are proudly non-profit. Faith Specialty Plates is the only specialty plate organization that provides online convenience for buying Faith themed plates and connecting you to your faithful charity. <u><a href="about.html">About each specialty plate.</a></u></small></h3>
 		</article>
 			
 <!--article 2-->
 		<article class="col-md-4">
-		<a href="/"><img class="ctaImg image-fluid w-75 mt-5 ml-4 pb-5" src="images/ccOrder.png" alt="woman charging something on her credit card." /></a>
+		<a href="featured.html"><img class="ctaImg image-fluid w-75 mt-5 ml-4 pb-5" src="images/ccOrder.png" alt="woman charging something on her credit card." /></a>
 		<h2 class="text-left mt-2"><em><b>Select A Plate</b></em></h2>
-		<h3 class="pl-3 pr-2 pb-5"><small>Get inspired and give support, to the many who serve one another with humanitarian kindness not discriminating in gender, race, faith, or background. <u><a class="text-decoration" href="/">Buy your Specialty Plate TODAY</a></u> and give support.</small></h3>
+		<h3 class="pl-3 pr-2 pb-5"><small>Get inspired and give support, to the many who serve one another with humanitarian kindness not discriminating in gender, race, faith, or background. <u><a class="text-decoration" href="featured.html">Buy your Specialty Plate TODAY</a></u> and give support.</small></h3>
 		</article>
 			
 <!--article 3-->
 		<article class="col-md-4">
-		<a href="/"><img class="ctaImg image-fluid w-75 mt-5 ml-4 pb-5" src="images/specialDeal.png" alt="Special Deal sign in red" /></a>
+		<a href="onsale.html"><img class="ctaImg image-fluid w-75 mt-5 ml-4 pb-5" src="images/specialDeal.png" alt="Special Deal sign in red" /></a>
 		<h2 class="text-left mt-4"><em><b>25% OFF</b></em></h2>
 		<h3 class="pl-3 pr-2 pb-5"><small>25% OFF your order on these select specialty plates. 
 		<br/><br/>
-		<u><a href="/">Act Now</a></u>
+		<u><a href="onsale.html">Act Now</a></u>
 		<br/><br/>
 		It’s Too Good to Miss OUT!</small></h3>
 		</article>
@@ -552,13 +164,13 @@ footer {
 		
 			<div class="container-fluid">
 				<article>
-			<a href="/"><img class="wallPlates mt-5 image-fluid" src="images/wallOfPlates.png" alt="A display of 24 state tags" /></a>
+			<a href="featured.html"><img class="wallPlates mt-5 image-fluid" src="images/wallOfPlates.png" alt="A display of 24 state tags" /></a>
 				
 				<div class="text-capitalize ml-1"><h3><em>ORDER YOUR NEW SPECIALTY OR PERSONALIZED FLORIDA LICENSE PLATE ON LINE TODAY</em></h3></div>
 				<div class="text-capitalize ml-4 pr-2"><p>YOU CAN GET A FLORIDA SPECIALTY LICENSE PLATE FOR THE FIRST TIME; SWITCH YOUR EXISTING SPECIALTY LICENSE PLATE; SWITCH OUTSIDE OF YOUR REGISTRATION PERIOD OR CHOOSE TO INCLUDE YOUR ANNUAL REGISTRATION RENEWAL. YOU CAN ALSO PERSONALIZE YOUR LICENSE PLATE (CHOOSE THE CHARACTERS YOU WANT ON IT). ALL ONLINE - STEP UP TO THE PLATE TODAY!</p></div>
 			
 			<br />
-			<button id="orderN" class="cta orderNow" type="button">Order Now</button>
+			<a href="featured.html"><button class="cta orderNow" type="button">Order Now</button></a>
 		</article>
 				</div><!---container --->
 	</section>
@@ -633,7 +245,7 @@ footer {
 		</section>
 
 <!--Address-->
-				<h5 class="ml-4 mb-4 pr-5"
+				<h5 class="ml-4 mb-4 pr-5">
 				<address class="ml-4 mb-4 pr-5">
 					126 S. BraveHeart Street, 2nd Floor, Jacksonville, Fl 34567  
 				</address>
