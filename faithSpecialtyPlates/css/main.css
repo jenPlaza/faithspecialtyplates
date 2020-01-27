@@ -48,7 +48,6 @@
 /*************************HEADER & NAVIGATION****************/
 	header
 		{
-            width: 100%;
             height: 100px;
 			background-color: #f1f1f0;
         }
@@ -73,7 +72,6 @@
 /******************************************************************HOME***********************/
 /*************************************MAIN*********************/
 	main{
-		width: 100%;
         height: 850px;
 		background-color: #221A09;
 		color:#F1F1F0;
@@ -86,20 +84,16 @@
 		padding: 2% 1% 5% 1%;
 	}
 	
-	.mainText{
-		margin: -17% 2% 5% 0%;
-		padding-right:8%
-	}
 	.cta {
   		border-radius: 7px;
   		background: #bc2134;
-  		padding:40px 50px 40px 50px;
-  		margin: 0px 0px 0px 27%;
-  		color: white; }
+  		padding:60px 105px 60px 105px;
+  		color: white;
+		border:none;
+}
 	
 /*************************************3-COLUMN SECTION********/
 	section:first-of-type {
-		width: 100%;
         height: auto;
 		background-color: #f1f1f0;
 		color: #5B4618;
@@ -110,18 +104,17 @@
 	
 /****************************FEATURED SPECIALTY PLATES********/
 	#fsp{
-		width: 100%;
         height: 750px;
 		background-color: #221A09;
 		color: #f1f1f0;
 		}
+
 	.plate{
-		height: 100px;
+		width:224px;
 	}
 	
 /*************************************ORDER NOW***************/
 	#orderNow {
-		width: 100%;
         height: 850px;
 		background-color: #f1f1f0;
 		}
@@ -132,7 +125,6 @@
 
 /*************************************TESTIMONIALS*************/
 	#testimonials {
-		width: 100%;
         height: 555px;
 		background-color: #221A09;
 		color: #f1f1f0;
@@ -143,7 +135,6 @@
 	
 /*************************************FOOTER*****************/
 footer {
-		width: 100%;
         height: 310px;
 		background-color: #5b4618;
 		color: #f1f1f0;
@@ -158,35 +149,40 @@ footer {
 	.copy{
 		width: 15px;
 	}
+
+/*********************************************ABOUT******************************/
+/***********Main********/
+#aboutUs{
+	background-color: #d6d5d2;
+		color: #5b4618;
+}
+
 /*********************************************FEATURED & ON SALE******************************/
 /***********FEATURED & ONSALE********/
 	#featuredSP{
-		width: 100%;
-        height: auto;
 		color: #520101;
 		background-color: #f1f1f0;
-		margin-top:10%;
+		margin-top:30%;
 		}
 	.noHSpace{
 		margin-top:-9%;
 		color: #520101;
 	}
+	.noHSpaceSale{
+	margin-top:21%;
+	margin-left:-35%;
+		color: #520101;
+	}
 	.plates{
-		height: 250px;
-		margin-left:-7%;
+		height: 230px;
+		margin-right:1%;
 	}
 	.invisiblePlate{
 		display:none;
 	}
-	.orderNow {
-  		padding:60px 70px 60px 70px;
-  		margin: 0px 0px 0px 20%;
-		font-size: 1.5rem;
-	}
 
 /***************Testionials********/
 	#FTestimonials {
-  		width: 100%;
         height: 500px;
 		color: #520101;
 		background-color: #f1f1f0;
@@ -197,8 +193,11 @@ footer {
 	}
 
 /***************Footer********/
-.unmarginedFooter{
-	margin-top:825%;
+.unmarginedFooterOnSale{
+	margin-top:565%;
+}
+.unmarginedFooterFeatured{
+	margin-top:840%;
 }
 	
 /******************************MD SCREEN PROPERTIES***************************/
@@ -229,9 +228,8 @@ footer {
 	
 /***************Main***************/
 	main{
-        height: auto;
 		padding-bottom: 5%;
-		margin-top:-15%;
+		margin-top:-6%;
 	}
 	.mImg{
 		height: 300px;
@@ -239,39 +237,26 @@ footer {
 		padding: 0% 4% 2% 4%;
 	}
 	.cta{
-		padding:20px 30px 20px 30px;
-		margin-left:1%;
+		padding:20px 102px 20px 102px;
 	}
 	
 /***************FSP***************/
 	#fsp{
     	height: 650px;
-		overflow:hidden;
-	}
-	.plate{
-		width: 225px;
-		height: auto;
 	}
 	figcaption{
 		text-align: left;
 	}
 /***************Order Now**********/
-	#orderNow{
-    	height: auto;
-		padding-bottom: 5%;
-	}
+
 	.wallPlates{
 		width: 90%;
 	}
 
 /***************Testionials********/
-	#testimonials {
-        height: auto;
-	}
 	.review{
 		width:370px;
 		height:320px;
-		overflow: auto;
 	}
 	.slide{
 		height:240px;
@@ -300,23 +285,22 @@ footer {
 /*********************FEATURED & ON SALE*********/
 /***********FEATURED, 25%OFF**********/
 	#featuredSP{
-        height: auto;
-		margin-top:15%;
+		margin-top:5%;
 		}
 	.noHSpace{
 		margin-top:15%;
 		margin-left: -55%;
+	}
+		.noHSpaceSale{
+	margin-top:15%;
+	margin-left:-55%;
+		color: #520101;
 	}
 
 	.plates{
 		width:auto;
 		height: 150px;
 		margin-left:0%;
-	}
-	.cta {
-  		padding:20px;
-  		margin: 0px 0px 0px 28%;
-		font-size: 1rem;
 	}
 		.invisiblePlate{
 		display:block;
@@ -338,8 +322,11 @@ footer {
 	}
 	
 /***************Footer********/
-.unmarginedFooter{
-	margin-top:325%;
+ .unmarginedFooterFeatured{
+	margin-top:10%;
+}
+	.unmarginedFooterOnSale{
+	margin-top:265%;
 }
 	
 /***************end @media 786*************/
@@ -356,6 +343,9 @@ footer {
 	}
 
 /***************Main***************/
+	main{
+		height:auto;
+	}
 	.mImg{
 		height: 375px;
 		margin: 13% 0% 5% 1%;
@@ -395,60 +385,32 @@ footer {
 	
 /*********************FEATURED & ONSALE***************/
 /***********FEATURED, 25%OFF**********/
+
 	#featuredSP{
-        height: auto;
-		margin-top:15%;
-		margin-left:10%;
+		margin-top:10%;
 		}
-		.noHSpace{
-		margin-top:-10%;
-		margin-left: 0%;
+	.noHSpace{
+		margin-top:12%;
+		margin-left: -40%;
 	}
-
-	.plates{
-		width:auto;
-		height: 133px;
-		padding:2;
-	}
-	figcaption{
-		font-size: 0.9rem;
-	}
-	.cta {
-  		padding:10px;
-  		margin: 0px 0px 0px 28%;
-		font-size: 1rem;
-	}
-		.invisiblePlate{
-		display:block;
-	}
-
-/***************Testionials********/
-	#FTestimonials {
-        height: 1593px;
-		border-left:1px solid black;
-		margin: 0% 0% 0% -10%;
-		width:125%;
-		}
-	.tstmnls{
-		font-size: 1.75rem;
-		padding:2%;
-		text-decoration: underline overline;
-	}
-	.reviews{
-		width:170px;
-		height:220px;
-		margin:10% 0% 2% 5%;
-		padding:0;
-		border-bottom:1px solid black;
-	}
-	.slides{
-		height:95px;
+		.noHSpaceSale{
+	margin-top:12%;
+	margin-left:-42%;
+		color: #520101;
 	}
 	
+	.plates{
+		width:auto;
+		height: 200px;
+	}
+	
+
+	
 	/***************Footer********/
-.unmarginedFooter{
-	margin-top:163.5%;
+.unmarginedFooterOnSale{
+	margin-top:220%;
 }
+
 	
 /***************end @media 992*************/
 }
@@ -463,10 +425,14 @@ footer {
 	}
 	
 /***************Main***************/
+		
 	.mImg{
 		height: 450px;
 		margin: 13% 0% 5% 2%;
 		padding: 0% 4% 0% 4%;
+	}
+	.cta{
+		margin: 0% 0% 0% 5%;
 	}
 	
 /***************FSP***************/
