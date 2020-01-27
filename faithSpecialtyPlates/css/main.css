@@ -600,25 +600,26 @@ footer {
 		margin-left: 35%;
 	}	
 	
-	/***********FEATURED, 25%OFF**********/
+/***********FEATURED, 25%OFF**********/
 	#featuredSP{
+		width:300%;
         height: auto;
-		margin-top:15%;
-		margin-left:10%;
-		overflow:hidden;
+		margin-top:40%;
+		margin-left:-70%;
 		}
 		.noHSpace{
-		margin-top:15%;
-		margin-left: -50%;
+		margin-top:5%;
+		margin-left: -17%;
 	}
 
 	.plates{
 		width:auto;
-		height: 133px;
+		height: 300px;
 		padding:2;
 	}
 	figcaption{
 		font-size: 0.9rem;
+		margin-left: -27%;
 	}
 	.cta {
   		padding:10px;
@@ -631,39 +632,32 @@ footer {
 
 /***************Testionials********/
 	#FTestimonials {
-        height: 1593px;
-		border-left:1px solid black;
-		margin: -9% 0% 0% -5%;
-		width:100%;
+		width:1600px;
+		height:860px;
+		margin-top: 90%;
+		border:none;
 		}
 	.tstmnls{
-		font-size: 1.75rem;
+		font-size: 4.5em;
 		padding:2%;
-		text-decoration: underline overline;
+		text-decoration: none;
 	}
 	.reviews{
-		width:170px;
-		height:225px;
-		margin:10% 0% 2% 5%;
-		padding:0;
-		border-bottom:1px solid black;
+		width:250px;
+		height:350px;
+		margin:10% 0% 2% 80%;
+		border:none;
+		
 	}
 	.slides{
-		height:100px;
+		height:200px;
 	}
 	
 	/***************Footer********/
 .unmarginedFooter{
-	margin-top:136.5%;
+	margin-top:92%;
 	width:100%;
 }
-	
-	/***************Footer********/
-.unmarginedFooter{
-	margin-top:136.5%;
-	width:100%;
-}
-	
 
 /***************end @media 2400*************/
 }
