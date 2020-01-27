@@ -150,6 +150,13 @@ footer {
 		width: 15px;
 	}
 
+	.unmarginedFooterOnSale{
+	margin-top:565%;
+	}
+	.unmarginedFooterFeatured{
+	margin-top:35%;
+	}
+
 /*********************************************ABOUT******************************/
 /***********Main********/
 #aboutUs{
@@ -157,7 +164,7 @@ footer {
 		color: #5b4618;
 }
 
-/*********************************************FEATURED & ON SALE******************************/
+/*********************************************FEATURED,ONSALE, & ORDER NOW******************************/
 /***********FEATURED & ONSALE********/
 	#featuredSP{
 		color: #520101;
@@ -171,6 +178,11 @@ footer {
 	.noHSpaceSale{
 	margin-top:21%;
 	margin-left:-35%;
+		color: #520101;
+	}
+	.noHSpaceOrder{
+	margin-top:13%;
+	margin-left:-55%;
 		color: #520101;
 	}
 	.plates{
@@ -192,14 +204,11 @@ footer {
 		padding-bottom: 2%;
 	}
 
-/***************Footer********/
-.unmarginedFooterOnSale{
-	margin-top:565%;
+/***********Registrations********/
+.registration{
+	background-color:  #f1f1f0;
 }
-.unmarginedFooterFeatured{
-	margin-top:840%;
-}
-	
+
 /******************************MD SCREEN PROPERTIES***************************/
 /**************************HOME*************/
 @media (min-width: 768px) {
@@ -282,10 +291,20 @@ footer {
 		margin-top:4%;
 	}
 	
+	 .unmarginedFooterFeatured{
+	margin-top:10%;
+}
+	.unmarginedFooterOnSale{
+	margin-top:265%;
+}
+	.unmarginedFooterOrder{
+	margin-top:110%;
+	}
+	
 /*********************FEATURED & ON SALE*********/
 /***********FEATURED, 25%OFF**********/
 	#featuredSP{
-		margin-top:5%;
+		margin-top:10%;
 		}
 	.noHSpace{
 		margin-top:15%;
@@ -294,7 +313,10 @@ footer {
 		.noHSpaceSale{
 	margin-top:15%;
 	margin-left:-55%;
-		color: #520101;
+	}
+	.noHSpaceOrder{
+	margin-top:-10%;
+	margin-left:2%;
 	}
 
 	.plates{
@@ -313,7 +335,7 @@ footer {
 		}
 	.reviews{
 		width:200px;
-		height:320px;
+		height:325px;
 		margin:10% 0% -30% 5%;
 		overflow: auto;
 	}
@@ -321,15 +343,12 @@ footer {
 		height:100px;
 	}
 	
-/***************Footer********/
- .unmarginedFooterFeatured{
-	margin-top:10%;
+/***********Registrations********/
+.registration{
+	background-color:  #f1f1f0;
 }
-	.unmarginedFooterOnSale{
-	margin-top:265%;
-}
-	
-/***************end @media 786*************/
+
+/***************end @media 768*************/
 }
 
 /********************************LGR SCREEN PROPERTIES**************************/
@@ -382,6 +401,12 @@ footer {
 		margin-top:2%;
 		margin-left:0%;
 	}
+	.unmarginedFooterOnSale{
+	margin-top:220%;
+}
+.unmarginedFooterOrder{
+	margin-top:90%;
+	}
 	
 /*********************FEATURED & ONSALE***************/
 /***********FEATURED, 25%OFF**********/
@@ -398,20 +423,17 @@ footer {
 	margin-left:-42%;
 		color: #520101;
 	}
+	.noHSpaceOrder{
+	margin-top:11%;
+	margin-left:-46%;
+	}
 	
 	.plates{
 		width:auto;
 		height: 200px;
 	}
-	
+		
 
-	
-	/***************Footer********/
-.unmarginedFooterOnSale{
-	margin-top:220%;
-}
-
-	
 /***************end @media 992*************/
 }
 
@@ -427,12 +449,9 @@ footer {
 /***************Main***************/
 		
 	.mImg{
-		height: 450px;
-		margin: 13% 0% 5% 2%;
+		height: 455px;
+		margin: 13% 0% 6% 3%;
 		padding: 0% 4% 0% 4%;
-	}
-	.cta{
-		margin: 0% 0% 0% 5%;
 	}
 	
 /***************FSP***************/
@@ -441,7 +460,6 @@ footer {
 	}
 	.plate{
 		width: 370px;
-		height: auto;
 	}
 /***************Order Now**********/
 	.wallPlates{
@@ -471,65 +489,57 @@ footer {
 	.copySec{
 		margin-top:2%;
 	}	
+	.unmarginedFooterFeatured{
+	margin-top:3%;
+}
+	.unmarginedFooterOnSale{
+	margin-top:150%;
+}
+	.unmarginedFooterOrder{
+	margin-top:50%;
+	}
 	
 /*********************FEATURED & ONSALE***************/
 /***********FEATURED, 25%OFF**********/
-	#featuredSP{
-        height: auto;
-		margin-top:15%;
-		margin-left:10%;
-		overflow:hidden;
-		}
-		.noHSpace{
-		margin-top:15%;
-		margin-left: -50%;
+	.noHSpace{
+		margin-top:9.5%;
+		margin-left: -33%;
+	}
+	.noHSpaceSale{
+		margin-top:10%;
+		margin-left: -35%;
+	}
+	.noHSpaceOrder{
+	margin-top:10%;
+	margin-left:-38%;
 	}
 
 	.plates{
 		width:auto;
-		height: 133px;
+		height: 164px;
 		padding:2;
-	}
-	figcaption{
-		font-size: 0.9rem;
-	}
-	.cta {
-  		padding:10px;
-  		margin: 0px 0px 0px 28%;
-		font-size: 1rem;
 	}
 		.invisiblePlate{
 		display:block;
 	}
-
+	
 /***************Testionials********/
+	/***************Testionials********/
 	#FTestimonials {
-        height: 1593px;
-		border-left:1px solid black;
-		margin: 5% 0% 0% -5%;
-		width:100%;
+		margin-right: 5%;
 		}
-	.tstmnls{
-		font-size: 1.75rem;
-		padding:2%;
-		text-decoration: underline overline;
+	.reviews{
+		width:200px;
+		height:320px;
+		margin:10% 0% -30% 5%;
+		overflow: auto;
 	}
 	.reviews{
-		width:170px;
-		height:225px;
-		margin:10% 0% 2% 5%;
-		padding:0;
-		border-bottom:1px solid black;
+		width:160px;
+		height:320px;
+		margin:10% 0% -30% 5%;
+		overflow: auto;
 	}
-	.slides{
-		height:100px;
-	}
-	
-	/***************Footer********/
-.unmarginedFooter{
-	margin-top:138.5%;
-	width:100%;
-}
 
 /***************end @media 1200*************/
 }
@@ -540,9 +550,6 @@ footer {
 		height: 600px;
 		margin: 12% 0% 5% 3%;
 		padding: 3% 3% 3% 3%;
-	}
-	.cta{
-		margin-top:2%;
 	}
 	
 /***************FSP***************/
@@ -566,64 +573,63 @@ footer {
 		margin-left: 35%;
 	}	
 	
+
+.unmarginedFooterFeatured{
+	margin-top:2%;
+}
+.unmarginedFooterOnSale{
+	margin-top:75%;
+}
+.unmarginedFooterOrder{
+	margin-top:0%;
+}
+	
 /***********FEATURED, 25%OFF**********/
 	#featuredSP{
-		width:300%;
+		width:2200px;
         height: auto;
-		margin-top:40%;
-		margin-left:-70%;
+		margin-top:30%;
+		margin-left:-50%;
 		}
 		.noHSpace{
 		margin-top:5%;
-		margin-left: -17%;
+		margin-left: -16%;
+	}
+		.noHSpaceSale{
+	margin-top:5%;
+	margin-left:-17%;
+	}
+		.noHSpaceOrder{
+	margin-top:5%;
+	margin-left:-19%;
 	}
 
 	.plates{
 		width:auto;
-		height: 300px;
+		height: 150px;
 		padding:2;
 	}
-	figcaption{
-		font-size: 0.9rem;
-		margin-left: -27%;
-	}
-	.cta {
-  		padding:10px;
-  		margin: 0px 0px 0px 28%;
-		font-size: 1rem;
-	}
-		.invisiblePlate{
-		display:block;
-	}
+
 
 /***************Testionials********/
 	#FTestimonials {
 		width:1600px;
-		height:860px;
-		margin-top: 90%;
-		border:none;
+		height:auto;
+		margin-left:-55%;
 		}
-	.tstmnls{
-		font-size: 4.5em;
-		padding:2%;
-		text-decoration: none;
-	}
 	.reviews{
 		width:250px;
 		height:350px;
-		margin:10% 0% 2% 80%;
+		margin:10% 0% 2% 120%;
 		border:none;
-		
 	}
 	.slides{
 		height:200px;
 	}
-	
-	/***************Footer********/
-.unmarginedFooter{
-	margin-top:92%;
-	width:100%;
+	/***********Registrations********/
+.registration{
+	margin-bottom:10%;
 }
-
+	
 /***************end @media 2400*************/
 }
