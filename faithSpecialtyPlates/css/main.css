@@ -48,8 +48,8 @@
 /*************************HEADER & NAVIGATION****************/
 	header
 		{
-            height: 100px;
-			background-color: #f1f1f0;
+            height: 125px;
+			background-color: transparent;
         }
 	nav
 		{
@@ -62,20 +62,19 @@
 	.navbar-light .navbar-nav .nav-link.active{
 		color: #bc2134;
 		}
-	.navbar-fixed-top{
-  		position: fixed;
-		}
-	#hamburgerMenuBar{
-		margin-top:-10%;
-		width:50px;
+
+	.navbar-toggler{
+		margin-top:-15%;
+		margin-left:85%;
 	}
+
 /******************************************************************HOME***********************/
 /*************************************MAIN*********************/
 	main{
         height: 850px;
 		background-color: #221A09;
 		color:#F1F1F0;
-		margin-top:-4%;
+		margin-top:-20%;
 		}
 		.mImg{
 		height: 250px;
@@ -169,7 +168,7 @@ footer {
 	#featuredSP{
 		color: #520101;
 		background-color: #f1f1f0;
-		margin-top:30%;
+		margin-top:0%;
 		}
 	.noHSpace{
 		margin-top:-9%;
