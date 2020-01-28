@@ -64,9 +64,87 @@
 $ 100.00</big></figcaption>
 		</figure>
 			<br />
-			<a href="ordernow.html"><button class="cta text-center w-100" type="button">Buy Now</button></a>
+		
+<!--/****************************************BUTTON 1************************************/-->
+			<button id="checkBtnNoRenew" class="button cta text-center w-100" type="button">Buy Now</button>
 			<br />
 	</div>
+		
+				<style>
+					form{
+						border:1px solid #5b4618;
+					}
+					.shoppingCart{
+						
+					}
+			.cart{
+				border-bottom:1px solid black;
+			}
+					.test, .checkBtn{
+						float:right;
+					}
+					.clearBtn{
+						float:left;
+					}
+					.cartFooter{
+						background-color: #5b4618;
+						height:25px;
+					}
+					#noRenewal,#renewal, #thankyou{
+						display:none;
+					}
+			
+		</style>
+		
+		
+		<!---Popup Form--->
+			<form id="noRenewal" class="mt-5 bg-white" method= "post">
+			<div class="container-fluid ">
+			<div class="row">
+			<h3><b>Your Shopping Cart</b></h3>
+			</div>-row -
+			
+				
+			<div class="row cart">	
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item"><div class="cField ml-5 pr-4">Item</div></li>
+				<li class="list-inline-item"><div class="cField ml-5 pr-5">Description</div></li>
+				<li class="list-inline-item"><div class="cField ml-5 pl-5 pr-5">Price</div></li>
+				<li class="list-inline-item"><div class="cField ml-5 pl-5 pr-5">Qty</div></li>
+				<li class="list-inline-item"><div class="cField ml-5">Subtotal</div></li>
+			</ul>
+			</div>
+				
+				
+			<div class=" row">	
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item"><div class="cItem ml-5">#999910876</div></li>
+				<li class="list-inline-item"><div class="cItem ml-3">Specialty License Plate (no annual registration renewal)</div></li>
+				<li class="list-inline-item"><div class="cItem ml-3">$100.00</div></li>
+				<li class="list-inline-item"><div class="cItem ml-3">1</div></li>
+				<li class="list-inline-item"><div class="cItem ml-3">$100.00</div></li>
+			</ul>
+			</div>
+				
+				<br/>
+			<div class="row test">	
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item"><div class="yourCart mr-5">Total</div></li>
+				<li class="list-inline-item"><div class="yourCart mr-5 pr-5">$100.00</div></li>
+			</ul>
+			</div>
+			
+				<br/><br/>
+			<div class="row test2">	
+			<ul class="list-unstyled list-inline">
+		<li class="list-inline-item"><div ><a href="about.html"><button id="clearBtn" class="button clearCart" type="button">Clear Cart</button></a></div></li>
+		<li class="list-inline-item"><div><button id="checkBtnNoRenewal" class="button buyCart" type="button">Checkout</button></div></li>
+
+		</ul>
+			</div>
+			</div>
+				<footer class="cartFooter"></footer>
+			</form>	
 		</section>
 		
 		<br /><br /><br /><br />
@@ -80,10 +158,78 @@ $ 100.00</big></figcaption>
 $150.00</big></figcaption>
 		</figure>
 			<br />
-			<a href="ordernow.html"><button class="cta text-center w-100" type="button">Buy Now</button></a>
+		
+<!--/****************************************BUTTON 2************************************/-->
+			<button id="checkBtnRenew" class="button cta text-center w-100" type="button">Buy Now</button>
 			<br />
 	</div>
-		</section>							
+		
+		<!---Popup Form--->
+			<form id="renewal" class="mt-5 bg-white" method= "post">
+			<div class="container-fluid ">
+			<div class="row">
+			<h3><b>Your Shopping Cart</b></h3>
+			</div>-row -
+			
+				
+			<div class="row cart">	
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item"><div class="cField ml-5 pr-4">Item</div></li>
+				<li class="list-inline-item"><div class="cField ml-5 pr-5">Description</div></li>
+				<li class="list-inline-item"><div class="cField ml-5 pl-5 pr-5">Price</div></li>
+				<li class="list-inline-item"><div class="cField ml-5 pl-5 pr-5">Qty</div></li>
+				<li class="list-inline-item"><div class="cField ml-5">Subtotal</div></li>
+			</ul>
+			</div>
+				
+				
+			<div class=" row">	
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item"><div class="cItem ml-5">#999910877</div></li>
+				<li class="list-inline-item"><div class="cItem ml-3">Specialty License Plate (no annual registration renewal)</div></li>
+				<li class="list-inline-item"><div class="cItem ml-3">$150.00</div></li>
+				<li class="list-inline-item"><div class="cItem ml-3">1</div></li>
+				<li class="list-inline-item"><div class="cItem ml-3">$150.00</div></li>
+			</ul>
+			</div>
+				
+				<br/>
+			<div class="row test">	
+			<ul class="list-unstyled list-inline">
+				<li class="list-inline-item"><div class="yourCart mr-5">Total</div></li>
+				<li class="list-inline-item"><div class="yourCart mr-5 pr-5">$150.00</div></li>
+			</ul>
+			</div>
+			
+				<br/><br/>
+			<div class="row test2">	
+			<ul class="list-unstyled list-inline">
+		<li class="list-inline-item"><div ><a href="about.html"><button id="clearBtn" class="button clearCart" type="button">Clear Cart</button></a></div></li>
+		<li class="list-inline-item"><div><button id="checkBtnRenewal" class="button buyCart" type="button">Checkout</button></div></li>
+
+		</ul>
+			</div>
+			</div>
+				<footer class="cartFooter"></footer>
+			</form>	
+		</section>
+		
+				<!---Popup Form--->
+			<form id="thankyou" class="mt-5 bg-white" method= "post">
+				<a href="index.html"><b>X</b></a>
+			<div class="container-fluid ">
+			<div class="row">
+			<h3><b>Thank you your order has been Processed.</b></h3>
+			</div>
+			
+			<div class="row cart">	
+			<h4>Your order is processed online and your new Florida specialty license plate is then issued and mailed to you directly from a Florida County Tax Collector’s Office processed through the Florida Department of Revenue and the Florida Department of Highway Safety and Motor Vehicles.
+			 </h4>
+			</div>
+				
+			</div>
+				<footer class="cartFooter"></footer>
+			</form>	
 					
 <!--column 3, text-->
 <section class="verbiage">
@@ -162,7 +308,7 @@ If you just need to renew your existing tag, please visit your local County Tax 
 	</div><!---container --->
 	</aside>
 	</div><!---col --->
-	</div><!---container --->
+
 	
 <!---Footer--->
 	<footer class="unmarginedFooterOrder">
@@ -198,10 +344,10 @@ If you just need to renew your existing tag, please visit your local County Tax 
 	</footer>
 
 	
-	<script src="js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-<!--	<script src="js/main.js"></script>-->
+    <script src="js/main.js"></script>
 	
 </body>
 </html>
