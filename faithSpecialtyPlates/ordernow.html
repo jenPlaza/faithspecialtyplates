@@ -12,37 +12,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <title>Order Now | Featured Specialty Plates</title>
-				<style>
-					form{
-						border:1px solid #5b4618;
-					}
-					.shoppingCart{
-						
-					}
-			.cart{
-				border-bottom:1px solid black;
-			}
-					.test, .checkBtn{
-						float:right;
-					}
-					.clearBtn{
-						float:left;
-					}
-					.cartFooter{
-						background-color: #5b4618;
-						height:25px;
-					}
-					#noRenewal,#renewal, #thankyou{
-						display:none;
-					}
-			
-		</style>
+
 </head>
 <body>
 <!---Navigation--->
 	<header class="w-100">
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" >
   		<a class="navbar-brand" href="index.html"><img class="float-left w-75" src="images/faithSpecialtyLogo.png" alt="Faith Specialty Plates Logo" /></a>
 		
 <!--hamburger Menu button-->
@@ -52,7 +28,7 @@
 
  	 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     	<ul class="navbar-nav mr-auto">
-     		<li class="nav-item "><a class="nav-link active pr-5" href="index.html">Home <span class="sr-only">(current)</span></a></li>
+     		<li class="nav-item "><a class="nav-link pr-5" href="index.html">Home <span class="sr-only">(current)</span></a></li>
 			<li class="nav-item "><a class="nav-link pr-5" href="about.html">About <span class="sr-only">(current)</span></a></li>
 			<li class="nav-item "><a class="nav-link pr-5" href="featured.html">Featured <span class="sr-only">(current)</span></a></li>
 			<li class="nav-item "><a class="nav-link pr-5" href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
@@ -66,155 +42,133 @@
 	<div class="col">
 	<section id="featuredSP" class="h-auto bg-transparent">
 	<div class="container-fluid ">
-	<div class="row">
+	<div class="row ">
 		<h1 class="text-center">Order Now</h1>
 		<h3 class="noHSpaceOrder text-center pb-5"><small>Buy Your Specialty Plate Today!</small></h3>
-	</div><!---row --->
+		</div><!---row --->
 		<div class="row">
-		<p>1. PAY - Make your choice of transaction and make your secure payment. 
-<br/>
-2. SUBMIT REGISTRATION INFORMATION - After your payment clears, you receive an email to process your registration information online. 
-<br/>
-3. DISPLAY YOUR NEW PLATE - Receive your tag directly from a Florida Tax Collector by USPS and put your new tag with its new decal on your car and dispose of your old one.</p>
-	</div>
-	<div class="row justify-content-center">	
+			<p>1. PAY - Make your choice of transaction and make your secure payment. 
+					<br/>
+				2. SUBMIT REGISTRATION INFORMATION - After your payment clears, you receive an email to process your registration information online. 
+					<br/>
+				3. DISPLAY YOUR NEW PLATE - Receive your tag directly from a Florida Tax Collector by USPS and put your new tag with its new decal on your car and dispose of your old one.</p>
+		</div>
 		
-<!--column 1, registration without annual-->
-	<section class="registration ">
-	<div class=" col pt-5 pb-5">
-		<figure>
-			<a href="/"><img class="plates image-fluid w-100 h-auto mt-3 pb-2" src="images/arizonaPlate.jpeg" alt="Arizona Plate" /></a>
-			<figcaption class="text-center pt-1">Specialty License Plate (no Annual Registration renewal) 
-$ 100.00</figcaption>
-		</figure>
-			<br />
+<!--registration without annual------------------------------------------------------------------------------------------->	
 		
-<!--/****************************************BUTTON 1************************************/-->
-			<button id="checkBtnNoRenew" class="button cta text-center w-100" type="button">Buy Now</button>
-			<br />
-	</div>
-		
-
-		
-		
-		<!---Popup Form--->
-			<form id="noRenewal" class="mt-5 bg-white" method= "post">
+<!---No Renewal Popup Form--->
+			<form id="noRenewal" class="mt-5 bg-white rounded-top rounded-bottom container-fluid pl-0 pr-0"  method= "post">
 			<div class="container-fluid ">
+		    <div class="col">
+			<header class="bg-transparent">
 			<div class="row">
 			<h3><b>Your Shopping Cart</b></h3>
-			</div>-row -
-			
-				
-			<div class="row cart">	
-			<ul class="list-unstyled list-inline">
-				<li class="list-inline-item"><div class="cField ml-5 pr-4">Item</div></li>
-				<li class="list-inline-item"><div class="cField ml-5 pr-5">Description</div></li>
-				<li class="list-inline-item"><div class="cField ml-5 pl-5 pr-5">Price</div></li>
-				<li class="list-inline-item"><div class="cField ml-5 pl-5 pr-5">Qty</div></li>
-				<li class="list-inline-item"><div class="cField ml-5">Subtotal</div></li>
-			</ul>
 			</div>
-				
-				
-			<div class=" row">	
-			<ul class="list-unstyled list-inline">
-				<li class="list-inline-item"><div class="cItem ml-5">#999910876</div></li>
-				<li class="list-inline-item"><div class="cItem ml-3">Specialty License Plate (no annual registration renewal)</div></li>
-				<li class="list-inline-item"><div class="cItem ml-3">$100.00</div></li>
-				<li class="list-inline-item"><div class="cItem ml-3">1</div></li>
-				<li class="list-inline-item"><div class="cItem ml-3">$100.00</div></li>
-			</ul>
-			</div>
-				
-				<br/>
-			<div class="row test">	
-			<ul class="list-unstyled list-inline">
-				<li class="list-inline-item"><div class="yourCart mr-5">Total</div></li>
-				<li class="list-inline-item"><div class="yourCart mr-5 pr-5">$100.00</div></li>
-			</ul>
-			</div>
-			
+			</header>
+				<section class="bg-transparent">
+			<div class="table-responsive ">			
+			<table class="table borderless">
+ 				 <thead>
+					<tr>
+    				<th scope="col">#</th>
+    				<th scope="col">Item</th>
+     				<th scope="col">Description</th>
+	 				<th scope="col">Price</th>
+  					</tr>
+  				</thead>
+  			<tbody>
+    				<tr>
+      				<th scope="row">1</th>
+      				<td>999910876</td>
+      				<td>Specialty License Plate (no annual registration renewal)</td>
+      				<td>$100.00</td>
+    				</tr>
+  			</tbody>
+	
+				<thead>
+					<tr>
+     				<th scope="row"></th>
+      				<th scope="col"></th>
+      				<th scope="col"></th>
+	   				<th scope="col">Total</th>
+    				</tr>
+  				</thead>
+  			<tbody>
+    				<tr>
+     				<th></th>
+      				<td></td>
+      				<td></td>
+      				<td>$100.00</td>
+    				</tr>
+  				</tbody>
+				</table>
+				</div>					
 				<br/><br/>
-			<div class="row test2">	
-			<ul class="list-unstyled list-inline">
-		<li class="list-inline-item"><div ><button id="clearBtnNoRenewal" class="button clearCart" type="button" onclick="window.location.href='about.html';">Clear Cart</button></div></li>
-		<li class="list-inline-item"><div><button id="checkBtnNoRenewal" class="button buyCart" type="button">Checkout</button></div></li>
-
-		</ul>
-			</div>
-			</div>
-				<footer class="cartFooter"></footer>
-			</form>	
-		</section>
+				</section>
+				
+				<style>
+					.clearCart {
+  		color: #520101;
+		border: 3px solid #520101;
+		padding:20px 105px 20px 105px;
+		border-radius: 7px;
+		margin-top:-40%;
+						
+}
+					
+		.buyCart {
+  		border-radius: 7px;
+  		background: #520101;
+  		padding:20px 105px 20px 105px;
+  		color: white;
+		border:none;								
+}
+					
+		.test2{
+		margin-top:42%;
+		}
+				</style>
+				
+				
+				
+				<section>
+<!--form buttons-->
+				
+				<div class="row test2">	
+					<button id="clearBtnNoRenewal" class=" button clearCart mt-3 w-100 mx-auto" type="button" onclick="window.location.href='about.html';">Clear Cart</button>
+				
+					
+				
+					<button id="checkBtnNoRenewal" class="button buyCart mx-auto w-100 mt-3" type="button">Checkout</button>
+				</div>
+				</section>
+				</div>
+			</div>	
 		
-		<br /><br /><br /><br />
+				<!---footer--->
+					<footer class="cartFooter rounded-bottom container-fluid"></footer>
+				</form>	
+		
+		
+<!---Registration Form--->
+		<div class="row justify-content-center">	
+		
+			<section class="registration mt-5">
+			<div class=" col pt-5 pb-5">
+			<figure>
+				<a href="/"><img class="plates image-fluid w-100 h-auto pb-2" src="images/arizonaPlate.jpeg" alt="Arizona Plate" /></a>
+				<figcaption class="text-center pt-1">Specialty License Plate (no Annual Registration renewal) $ 100.00</figcaption>
+			</figure>
+			<br />
+				<button id="checkBtnNoRenew" class="button cta text-center w-100" type="button">Buy Now</button>
+			<br />
+			</div>
+			</section>
+		
+			<br /><br /><br /><br />
 								
-<!--column 2, registration with annual-->
-	<section class="registration">
-	<div class=" col pt-5 pb-5">
-		<figure>
-			<a href="/"><img class="plates image-fluid w-100 h-auto mt-3 pb-2" src="images/grandCanyonPlate.jpeg" alt="Grand Canyon Plate" /></a>
-			<figcaption class="text-center pt-1">Specialty License Plate with Annual Registration Renewal
-$150.00</figcaption>
-		</figure>
-			<br />
-		
-<!--/****************************************BUTTON 2************************************/-->
-			<button id="checkBtnRenew" class="button cta text-center w-100" type="button">Buy Now</button>
-			<br />
-	</div>
-		
-		<!---Popup Form--->
-			<form id="renewal" class="mt-5 bg-white" method= "post">
-			<div class="container-fluid ">
-			<div class="row">
-			<h3><b>Your Shopping Cart</b></h3>
-			</div>-row -
-			
-				
-			<div class="row cart">	
-			<ul class="list-unstyled list-inline">
-				<li class="list-inline-item"><div class="cField ml-5 pr-4">Item</div></li>
-				<li class="list-inline-item"><div class="cField ml-5 pr-5">Description</div></li>
-				<li class="list-inline-item"><div class="cField ml-5 pl-5 pr-5">Price</div></li>
-				<li class="list-inline-item"><div class="cField ml-5 pl-5 pr-5">Qty</div></li>
-				<li class="list-inline-item"><div class="cField ml-5">Subtotal</div></li>
-			</ul>
-			</div>
-				
-				
-			<div class=" row">	
-			<ul class="list-unstyled list-inline">
-				<li class="list-inline-item"><div class="cItem ml-5">#999910877</div></li>
-				<li class="list-inline-item"><div class="cItem ml-3">Specialty License Plate (no annual registration renewal)</div></li>
-				<li class="list-inline-item"><div class="cItem ml-3">$150.00</div></li>
-				<li class="list-inline-item"><div class="cItem ml-3">1</div></li>
-				<li class="list-inline-item"><div class="cItem ml-3">$150.00</div></li>
-			</ul>
-			</div>
-				
-				<br/>
-			<div class="row test">	
-			<ul class="list-unstyled list-inline">
-				<li class="list-inline-item"><div class="yourCart mr-5">Total</div></li>
-				<li class="list-inline-item"><div class="yourCart mr-5 pr-5">$150.00</div></li>
-			</ul>
-			</div>
-			
-				<br/><br/>
-			<div class="row test2">	
-			<ul class="list-unstyled list-inline">
-		<li class="list-inline-item"><div ><button id="clearBtnRenewal" class="button clearCart" type="button" onclick="window.location.href='about.html';">Clear Cart</button></div></li>
-		<li class="list-inline-item"><div><button id="checkBtnRenewal" class="button buyCart" type="button">Checkout</button></div></li>
-
-		</ul>
-			</div>
-			</div>
-				<footer class="cartFooter"></footer>
-			</form>	
-		</section>
-		
-				<!---Popup Form--->
+<!--registration with annual------------------------------------------------------------------------------------------->	
+<!---Thank you Popup Form--->
 			<form id="thankyou" class="mt-5 bg-white" method= "post">
 				<a href="index.html"><b>X</b></a>
 			<div class="container-fluid ">
@@ -229,18 +183,75 @@ $150.00</figcaption>
 				
 			</div>
 				<footer class="cartFooter"></footer>
-			</form>	
-					
-<!--column 3, text-->
-<section class="verbiage">
-	<div class=" col pt-3 pb-5">
-		<p>
-		Your order is processed online and your new Florida specialty license plate is then issued and mailed to you directly from a Florida County Tax Collector’s Office processed through the Florida Department of Revenue and the Florida Department of Highway Safety and Motor Vehicles.
-<br/>
-If you just need to renew your existing tag, please visit your local County Tax Collector, DMV or private tag agency or the official Florida Highway Safety and Motor Vehicles website: gorenew.com (additional convenience fees apply.)
-		</p>
-	</div>
+			</form>				
+			
+<!---Renewal Popup Form--->
+			<form id="renewal" class="mt-5 bg-white" method= "post">
+			<div class="container-fluid ">
+			<div class="row">
+			<h3><b>Your Shopping Cart</b></h3>
+			</div>
+			
+			<div class="row cart">	
+				<ul class="list-unstyled list-inline">
+					<li class="list-inline-item"><div class="cField ml-3">Qty</div></li>
+					<li class="list-inline-item"><div class="cField ml-3 ">Item</div></li>
+					<li class="list-inline-item"><div class="cField ml-5 pr-5">Description</div></li>
+					<li class="list-inline-item"><div class="cField ml-5 pl-5 pr-5">Price</div></li>
+				</ul>
+			</div>
+				
+			<div class=" row">	
+				<ul class="list-unstyled list-inline">
+					<li class="list-inline-item"><div class="cItem ml-3">1</div></li>
+					<li class="list-inline-item"><div class="cItem ml-2">#999910877</div></li>
+					<li class="list-inline-item"><div class="cItem ml-2">Specialty License Plate (no annual registration renewal)</div></li>
+					<li class="list-inline-item"><div class="cItem ml-3">$150.00</div></li>
+				</ul>
+			</div><br/>
+				
+			<div class="row test">	
+				<ul class="list-unstyled list-inline">
+					<li class="list-inline-item"><div class="yourCart mr-5">Total</div></li>
+					<li class="list-inline-item"><div class="yourCart mr-5 pr-5">$150.00</div></li>
+				</ul>
+			</div><br/><br/>
+			
+			<div class="row test2">	
+				<ul class="list-unstyled list-inline">
+					<li class="list-inline-item"><div><button id="clearBtnRenewal" class="button clearCart" type="button" onclick="window.location.href='about.html';">Clear Cart</button></div></li>
+					<li class="list-inline-item"><div><button id="checkBtnRenewal" class="button buyCart" type="button">Checkout</button></div></li>
+				</ul>
+			</div>
+		</div>
+				<footer class="cartFooter"></footer>
+			</form>				
+
+<!---Registration Form--->
+			<section class="registration">
+			<div class=" col pt-5 pb-5">
+			<figure>
+				<a href="/"><img class="plates image-fluid w-100 h-auto mt-3 pb-2" src="images/grandCanyonPlate.jpeg" alt="Grand Canyon Plate" /></a>
+				<figcaption class="text-center pt-1">Specialty License Plate with Annual Registration Renewal $150.00</figcaption>
+			</figure>
+			<br />
+		
+<!--***BUTTON 2******--->
+			<button id="checkBtnRenew" class="button cta text-center w-100" type="button">Buy Now</button>
+			<br />
+			</div>
 		</section>
+					 
+<!--verbiage before testimonials-->
+			<section class="verbiage mt-5">
+			<div class=" row ">
+				<p>
+					Your order is processed online and your new Florida specialty license plate is then issued and mailed to you directly from a Florida County Tax Collector’s Office processed through the Florida Department of Revenue and the Florida Department of Highway Safety and Motor Vehicles.
+					<br/><br/>   
+					If you just need to renew your existing tag, please visit your local County Tax Collector, DMV or private tag agency or the official Florida Highway Safety and Motor Vehicles website: gorenew.com (additional convenience fees apply.)
+				</p>
+			</div>
+			</section>
 		
 		</div><!---row --->
 	</div><!---col --->
