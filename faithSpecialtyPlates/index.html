@@ -12,234 +12,374 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <title>Home | Featured Specialty Plates</title>
+<style>
+/***********************Typography****************/
+body, p {
+    font-family: Montserrat, sans-serif;
+	color:#5b4618;
+}
+		h1{
+	font-family: Bold Roboto, sans-serif;
+	font-size: 2.5rem;
+		padding:2%;
+}
+	h2{
+	font-size: 1.75em;
+		padding:10px;
+}
+	h2 bold{
+		font-size: 2.25em;
+	}
+	h3{
+	font-size: 1.5rem;
+		padding:25px;
+}
+	h5{
+		font-size: 1rem;
+	}
+	h6{
+		font-size: 0.5rem;
+		line-height: 1.7;
+	}
+	
+	em{
+		color:#520101;
+		font-style: normal;
+	}
+	
+/***********************Body**********************/
 
+html,body,header,.view {
+  width: 100%;
+   height:0px;
+}
+nav
+	{
+	text-transform: uppercase;
+    }
+
+.bg-dark {
+  background-color: #221A09 !important;
+	}
+.bg-primary {
+  background-color: #520101 !important;
+	}
+.bg-danger{
+  background-color: #BC2134 !important;	
+	}
+a{
+	color: #520101;
+	}
+	
+/***********************Navigation***************/
+
+ .navbar-brand{
+    width:80%;
+    height:auto;
+	}
+.navbar-nav { 
+	display: flex; 
+	flex-flow: row nowrap;
+	margin-left:5%;
+	}
+.navbar-light .navbar-nav .nav-link {
+	font: bold 1.4rem Roboto, sans-serif;
+	}
+
+
+/************************************Sm Screen Devices************************************/
+	@media (min-width: 768px) {}
+/************************************Md Screen Devices************************************/
+@media (min-width: 992px) {}
+/************************************lg Screen Devices************************************/
+@media (min-width: 1200px) {}
+	
+</style>
 </head>
 <body>
-<!---Navigation--->
-	<header class="w-100">
+	
+<!--Navigation-->
+    <header>
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
-  		<a class="navbar-brand" href="index.html"><img class="float-left w-75" src="images/faithSpecialtyLogo.png" alt="Faith Specialty Plates Logo" /></a>
-		
-<!--hamburger Menu button-->
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
+          <!--Menu BAr-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent scrolling-navbar">
+            <div class="container ">
+				  <a class="navbar-brand " href="index.html"><img class=" w-50 ml-0" src="images/faithSpecialtyPlatesLogoWhite.png" alt="Faith Specialty Plates Logo" /></a>
+              
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+     		<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link active" href="index.html">Home </a></h5></li>
+			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="about.html">About</a></h5></li>
+			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="featured.html">Featured</a></h5></li>
+			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="contact.html">Contact</a></h5></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+			</header>
+	
+<!-- Main -->
+     <div class="container-fluid p-0">
+		<main>
+	<!-- Background Image -->
+			<div class="view text-white h-100 w-100" style="background-image: url('css/bgImgs/mainImg2.png'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+                <div class="row ml-3 mr-3">
+                 	 <header class="col-md-8 white-text text-center text-md-left mt-5 mb-5 ml-md-4 pl-md-4">
+                    	<h1 class="h1-responsive font-weight-bold pt-sm-5 mt-sm-5">Faith Specialty Plates</h1>
+					</header>
+					<div class="col-md-8 white-text text-center text-md-left mt-5 mb-5 ml-md-4 pl-md-4">
+					  	<br/><br/>
+                   		 <h6 class="mb-5">Faith Specialty Plates is a non-profit that helps to inspire and support different organizations that put God first in their mission to help, connect, and bring people together…</h6>
+						<button class="btn text-white border-white" type="button" onclick="window.location.href='about.html';">Read More</button>
 
- 	 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    	<ul class="navbar-nav mr-auto">
-     		<li class="nav-item "><a class="nav-link active pr-5" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-			<li class="nav-item "><a class="nav-link pr-5" href="about.html">About <span class="sr-only">(current)</span></a></li>
-			<li class="nav-item "><a class="nav-link pr-5" href="featured.html">Featured <span class="sr-only">(current)</span></a></li>
-			<li class="nav-item "><a class="nav-link pr-5" href="contact.html">Contact <span class="sr-only">(current)</span></a></li>
-   		</ul>
- 	 </div>
-	</nav>
-</header>
+                  	</div>
+				</div>
+            </div>
+		</main>
+	</div>
 	
-	
-<!---Main section--->
-	<main class="h-auto w-100 pb-5">
-		<div class="mImg pr-5">
-			<a href="about.html"><img class="mImg w-100 h-auto float-left" src="images/faithSpecialtyPlate.png" alt="Faith Specialty Plate" /></a>
-		</div>
-		<div class="mainText ml-5 mr-5 pt-4">
-		<h1 >Faith Specialty Plates</h1>
-		<h2>Faith Specialty Plates is a non-profit that helps to inspire and support different organizations that put God first in their mission to help, connect, and bring people together…</h2>
-			<br/>
-			
-		<button id="readM" class="cta text-center w-100" type="button" onclick="window.location.href='about.html';">Read More</button>
-		</div>
-	</main>
-	
-<!---3 columns--->
-	<section>
-		<div class="container-fluid">
-			<div class="row">
-			
+<!---3 columns--->	
+	<div class="container-fluid mt-4 pt-4 bg-transparent">
+		<section>
+             <div class="row">
 <!--article 1-->
-	<article class="col-md-4">
-		<a href="about.html"><img class="ctaImg image-fluid w-75 mt-5 ml-4 pb-5" src="images/faithSpecialtyPlatesIcon.png" alt="Faith Specialty Plates icon" /></a>
-		<h2 class="text-left mt-4"><em><b>Faith Specialty Plates</b></em></h2>
-		<h3 class="pl-3 pr-2 pb-5"><small>We are proudly non-profit. Faith Specialty Plates is the only specialty plate organization that provides online convenience for buying Faith themed plates and connecting you to your faithful charity. <u><a href="about.html">About each specialty plate.</a></u></small></h3>
+				<article class="col-md-4 mb-5">
+		<div class="mx-auto text-center mb-3">
+			<a href="about.html"><img class="image-fluid w-75 mb-5 pb-3" src="images/faithSpecialtyPlatesIcon.png" alt="Faith Specialty Plates icon" /></a>
+			<h2><em><b>Faith Specialty Plates</b></em></h2>
+		</div>
+		<h3><small>We are proudly non-profit. Faith Specialty Plates is the only specialty plate organization that provides online convenience for buying Faith themed plates and connecting you to your faithful charity. <u><a href="about.html">About each specialty plate.</a></u></small></h3>
 		</article>
 			
 <!--article 2-->
-		<article class="col-md-4">
-		<a href="featured.html"><img class="ctaImg image-fluid w-75 mt-5 ml-4 pb-5" src="images/ccOrder.png" alt="woman charging something on her credit card." /></a>
-		<h2 class="text-left mt-2"><em><b>Select A Plate</b></em></h2>
-		<h3 class="pl-3 pr-2 pb-5"><small>Get inspired and give support, to the many who serve one another with humanitarian kindness not discriminating in gender, race, faith, or background. <u><a class="text-decoration" href="featured.html">Buy your Specialty Plate TODAY</a></u> and give support.</small></h3>
+				<article class="col-md-4 mb-5">
+		<div class="mx-auto text-center mb-3">
+			<a href="featured.html"><img class="mage-fluid w-75 mb-5 pb-4" src="images/ccOrder.png" alt="woman charging something on her credit card." /></a>
+			<h2 class="mb-md-4"><em><b>Select A Plate</b></em></h2>
+		</div>
+		<h3 class="mt-md-5 pt-md-4 mt-lg-1 pt-lg-1"><small>Get inspired and give support, to the many who serve one another with humanitarian kindness not discriminating in gender, race, faith, or background. <u><a class="text-decoration" href="featured.html">Buy your Specialty Plate TODAY</a></u> and give support.</small></h3>
 		</article>
 			
 <!--article 3-->
-		<article class="col-md-4">
-		<a href="onsale.html"><img class="ctaImg image-fluid w-75 mt-5 ml-4 pb-5" src="images/specialDeal.png" alt="Special Deal sign in red" /></a>
-		<h2 class="text-left mt-4"><em><b>25% OFF</b></em></h2>
-		<h3 class="pl-3 pr-2 pb-5"><small>25% OFF your order on these select specialty plates. 
+				<article class="col-md-4 mb-5">
+		<div class="mx-auto text-center mb-3">
+			<a href="onsale.html"><img class=" image-fluid w-75 mb-5 pb-4 mt-1" src="images/specialDeal.png" alt="Special Deal sign in red" /></a>
+			<h2 class="mb-md-4"><em><b>25% OFF</b></em></h2>
+		</div>
+		<h3 class="mt-md-5 pt-md-4 mt-lg-1 pt-lg-1"><small>25% OFF your order on these select specialty plates. 
 		<br/><br/>
 		<u><a href="onsale.html">Act Now</a></u>
 		<br/><br/>
 		It’s Too Good to Miss OUT!</small></h3>
 		</article>
-				</div><!---row --->
-	</div><!---container --->
-	</section>
-	
-<!---Features Specialty Plates--->
-	<section id="fsp" class="h-auto pb-5 pt-5">
-	<div class="container-fluid">
-	<div class="row">
-		<h1 class="mt-4 pb-5">Featured Specialty Plates</h1>
-	</div><!---row --->
-
-	<div class="row justify-content-center">	
+			</div> <!--row-->
+		</section>
+	</div> <!--container-->
 		
-<!--column 1, ARROW-->
-<!--<section class="col text-white bg-transparent">
-		<button class="float-left bg-transparent border-0" id="prev"><img src="images/arrowToLeft.png" alt="arrow pointing to the left icon" /></button>
-		</section>-->
+<!---All Specialty Plates--->
+	<div class="container-fluid pt-5 pb-5 text-white bg-dark">
+		<section>
+		<div class="row">
+			<h1 class="mt-4 pb-4 ml-4">Specialty Plates</h1>
+		</div><!---row --->
+		<div class="row justify-content-center col-auto p-0">	
 
-<!--column 2, PLATE-->
-		<section class="col col-md bg-transparent border-0">
-		<figure>
-			<a href="/"><img class="plate image-fluid h-auto" src="images/crsPlate.png" alt="Faith Specialty Plate" /></a>
-	<figcaption class="text-white">A Catholic Foundation</figcaption>
-			</figure>
+<!--CRS PLATE-->
+		<section>
+			<div class="ml-sm-5 ml-md-2 ml-lg-3">
+				<figure>
+					<a href="/"><img class="image-fluid w-100 " src="images/crsPlate.png" alt="Faith Specialty Plate" /></a>
+					<figcaption class="text-white">A Catholic Foundation</figcaption>
+				</figure>
+			</div>
 		</section>
 								
-<!--column 3, PLATE-->
-		<section class="col col-md-auto">
-		<figure>
-			<a href="/"><img class="plate image-fluid h-auto" src="images/obiPlate.png" alt="Faith Specialty Plate" /></a>
-	<figcaption>A Christian Foundation</figcaption>
-			</figure>
+<!--OBI PLATE-->
+		<section>
+			<div class="ml-sm-5 ml-md-2 ml-lg-3">
+				<figure>
+					<a href="/"><img class="image-fluid w-100 " src="images/obiPlate.png" alt="Faith Specialty Plate" /></a>
+					<figcaption>A Christian Foundation</figcaption>
+				</figure>
+			</div>
 		</section>
 								
-<!--column 4, PLATE-->
-		<section class="col col-md-auto">
-		<figure>
-			<a href="/"><img class="plate image-fluid h-auto" src="images/mazonPlate.png" alt="Faith Specialty Plate" /></a>
-	<figcaption>A Jewish Foundation</figcaption>
-			</figure>
+<!--Mazon PLATE-->
+		<section>
+			<div class="ml-sm-5 ml-md-2 ml-lg-3">
+				<figure>
+				<a href="/"><img class="image-fluid w-100 " src="images/mazonPlate.png" alt="Faith Specialty Plate" /></a>
+				<figcaption>A Jewish Foundation</figcaption>
+				</figure>
+			</div>
 		</section>
 								
-<!--column 5, PLATE-->
-		<section class="col col-lg-auto">
-		<figure>
-			<a href="/"><img class="plate image-fluid h-auto" src="images/mercyUSAPlate.png" alt="Faith Specialty Plate" /></a>
-	<figcaption>An Islamic Foundation</figcaption>
-			</figure>
+<!--Mercy-USA PLATE-->
+		<section>
+			<div class="ml-sm-5 ml-md-2 ml-lg-3">
+				<figure>
+					<a href="/"><img class="image-fluid w-100 " src="images/mercyUSAPlate.png" alt="Faith Specialty Plate" /></a>
+					<figcaption>An Islamic Foundation</figcaption>
+				</figure>
+			</div>
 		</section>
 								
-<!--column 6, PLATE-->
-		<section class="col col-lg-auto">
-		<figure>
-			<a href="/"><img class="plate image-fluid h-auto" src="images/tzuPlate.png" alt="Faith Specialty Plate" /></a>
-	<figcaption>A Buddhist Foundation</figcaption>
-			</figure>
+<!--TzuPLATE-->
+		<section>
+			<div class="ml-sm-5 ml-md-2 ml-lg-3">
+				<figure>
+					<a href="/"><img class="image-fluid w-100 " src="images/tzuPlate.png" alt="Faith Specialty Plate" /></a>
+					<figcaption>A Buddhist Foundation</figcaption>
+				</figure>
+			</div>
 		</section>
 								
-<!--column 7, PLATE-->
-		<section class="col col-lg-auto">
-		<figure>
-			<a href="/"><img class="plate image-fluid h-auto" src="images/sewaPlate.png" alt="Faith Specialty Plate" /></a>
-	<figcaption >A Hindu Foundation</figcaption>
-			</figure>
+<!--Sewa PLATE-->
+		<section>
+			<div class="ml-sm-5 ml-md-2 ml-lg-3">
+				<figure>
+					<a href="/"><img class="image-fluid w-100 " src="images/sewaPlate.png" alt="Faith Specialty Plate" /></a>
+					<figcaption >A Hindu Foundation</figcaption>
+				</figure>
+			</div>
 		</section>
 					
-<!--column 8, PLATE-->
-		<section class="col col-lg-auto">
-		<figure>
-			<a href="/"><img class="plate image-fluid h-auto" src="images/fspPlate.png" alt="Faith Specialty Plate" /></a>
-	<figcaption>Faith Specialty Plate</figcaption>
-			</figure>
+<!--FSP PLATE-->
+		<section>
+			<div class="ml-sm-5 ml-md-2 ml-lg-3">
+				<figure>
+					<a href="/"><img class="image-fluid w-100 " src="images/fspPlate.png" alt="Faith Specialty Plate" /></a>
+					<figcaption>Faith Specialty Plate</figcaption>
+				</figure>
+			</div>
 		</section>
 		
-<!--column 9, PLATE-->
-		<section class="col col-md-1"></section>
-			
-<!--column 9, ARROW-->
-	<!--<section class="col">
-		<button class="float-right bg-transparent border-0" id="next"><img src="images/arrowToRight.png" alt="arrow pointing to the right icon" /></button>
-		</section>-->
-		
-	</div><!---row --->
-	</div><!---container --->
-	</section>
-	
-<!---Order Now--->
-	<section id="orderNow" class="h-auto pb-5 pt-5">
-		
-			<div class="container-fluid">
-				<article>
-			<a href="featured.html"><img class="wallPlates mt-5 image-fluid" src="images/wallOfPlates.png" alt="A display of 24 state tags" /></a>
-				
-				<div class="text-capitalize ml-1"><h3><em>ORDER YOUR NEW SPECIALTY OR PERSONALIZED FLORIDA LICENSE PLATE ON LINE TODAY</em></h3></div>
-				<div class="text-capitalize ml-4 pr-2"><p>YOU CAN GET A FLORIDA SPECIALTY LICENSE PLATE FOR THE FIRST TIME; SWITCH YOUR EXISTING SPECIALTY LICENSE PLATE; SWITCH OUTSIDE OF YOUR REGISTRATION PERIOD OR CHOOSE TO INCLUDE YOUR ANNUAL REGISTRATION RENEWAL. YOU CAN ALSO PERSONALIZE YOUR LICENSE PLATE (CHOOSE THE CHARACTERS YOU WANT ON IT). ALL ONLINE - STEP UP TO THE PLATE TODAY!</p></div>
-			
-			<br />
-			<button class="cta text-center w-100" type="button" onclick="window.location.href='featured.html';">Order Now</button>
-		</article>
-				</div><!---container --->
-	</section>
-	
-<!---Testimonials--->
-	<section id="testimonials" class="h-auto pb-5 pt-5">
-	<div class="container-fluid">
-	<div class="row">
-		<h1 class="mt-4 ml-1 pb-3">Testimonials</h1>
-	</div><!---row --->
-		
-	<div class="row justify-content-center ">	
-	<ul class="list-unstyled list-inline">
+<!--Empty PLATE-->
+		<section>
+			<div class="ml-sm-5 ml-md-2 ml-lg-3 d-sm-none visible d-md-block">
+				<figure>
+					<a href="/"><img class="image-fluid w-100" src="images/imgPlatePlacement.png" alt="Faith Specialty Plate" /></a>
+					<figcaption></figcaption>
+				</figure>
+			</div>
+		</section>
 
-<!--TESTIMONIAL1-->
-		<li class="list-inline-item">
-			<div class="review pl-3">
-			<img class="slide image-fluid float-left pr-3" src="images/jon-grogan-c_6UkpxsA-o-unsplash.jpg" alt="testimonial given by a man in his mid twenties">
+<!--Empty PLATE-->
+		<section>
+			<div class="ml-sm-5 ml-md-2 ml-lg-3 d-sm-none visible d-md-none visible d-lg-block">
+				<figure>
+					<a href="/"><img class="image-fluid w-100" src="images/imgPlatePlacement.png" alt="Faith Specialty Plate" /></a>
+					<figcaption></figcaption>
+				</figure>
+			</div>
+		</section>
+		
+		</div><!--row-->
+		</section>
+	</div><!---container --->
+	
+	
+	
+		<style>
+	.red{
+			border:1px solid red;
+		}
+		.pink{
+			border:1px solid pink;
+		}
+		.blue{
+			border:1px solid blue;
+		}
+		.green{
+			border:1px solid green;
+		}
+	</style>
+<!---Order Now--->
+	
+	<div class="container mt-5 mb-5 ">
+		<section>
+			<div class="row">
+				<div class="col text-capitalize">
+					<a href="featured.html"><img class="img-fluid w-100" src="images/wallOfPlates.jpg" alt="A display of 24 state tags" /></a>
+					<h3><em>ORDER YOUR NEW SPECIALTY OR PERSONALIZED FLORIDA LICENSE PLATE ON LINE TODAY</em></h3>
+
+					<p>YOU CAN GET A FLORIDA SPECIALTY LICENSE PLATE FOR THE FIRST TIME; SWITCH YOUR EXISTING SPECIALTY LICENSE PLATE; SWITCH OUTSIDE OF YOUR REGISTRATION PERIOD OR CHOOSE TO INCLUDE YOUR ANNUAL REGISTRATION RENEWAL. YOU CAN ALSO PERSONALIZE YOUR LICENSE PLATE (CHOOSE THE CHARACTERS YOU WANT ON IT). ALL ONLINE - STEP UP TO THE PLATE TODAY!</p>
+			
+						<br />
+					<!--<button class="btn bg-light" type="button" onclick="window.location.href='featured.html';"><b>Order Now</b></button>-->
+					<button class="text-center" type="button" onclick="window.location.href='featured.html';">Order Now</button>
+				</div><!--col-->
+			</div><!--row-->
+		</section>
+	</div><!--container-->
+			
+<!------------------------------------------------------------------Testimonials---------------------------------------------------------------------->
+	<div class="container-fluid bg-dark text-white red">
+	<section>
+	<div class="row">
+		<h1 class="mt-4 pb-4 ml-4">Testimonials</h1>
+	</div><!---row --->
+		
+	<div class="row p-0 mx-auto">	
+	<ul class="list-unstyled list-inline blue  ">
+
+<!--TESTIMONIAL1, Jon Grogan-->
+		<li class="col green">
+			<img src="images/jon-grogan-c_6UkpxsA-o-unsplash.jpg" alt="testimonial given by a man in his mid twenties">
+			<div class="pink w-25">
 			<h5>Jon Grogan</h5><h6>Awesome service! Thank you; keep up the good work.</h6>
 			</div>
 		</li>
 								
-<!--TESTIMONIAL2-->
-		<li class="list-inline-item">
-			<div class="review pl-3">
-			<img class="slide image-fluid float-left pr-3" src="images/wonderlane-boiz-wQG66E-unsplash.jpg" alt="testimonial given by a father holding his daughter in his arms"><h5>Wonderlane Boiz</h5><h6>I’m happy to support a charitable organization with a specialty plate. Thank you for all that you do.</h6>
+<!--TESTIMONIAL2, Wonderlane Boiz-->
+		<li class=" list-inline-item green">
+			
+			<img src="images/wonderlane-boiz-wQG66E-unsplash.jpg" alt="testimonial given by a father holding his daughter in his arms">
+			<div class=" pink w-75">
+			<h5>Wonderlane Boiz</h5><h6>I’m happy to support a charitable organization with a specialty plate. Thank you for all that you do.</h6>
 			</div>
 		</li>
 								
-<!--TESTIMONIAL3-->
-		<li class="list-inline-item">
-			<div class="review pl-3">
-			<img class="slide image-fluid float-left pr-3" src="images/kal-visuals-b1Hg7QI-zcc-unsplash.jpg" alt="testimonial given by a woman in her mid twenties"/><h5>Kal Visuals</h5><h6>Great Idea! Keep bringing people together.</h6>
+<!--TESTIMONIAL3, kal Visuals-->
+		<li class=" list-inline-item green">
+			<img src="images/kal-visuals-b1Hg7QI-zcc-unsplash.jpg" alt="testimonial given by a woman in her mid twenties"/>
+				<div class=" pink w-100">
+				<h5>Kal Visuals</h5><h6>Great Idea! Keep bringing people together.</h6>
 		</div>
 		</li>
 								
-<!--TESTIMONIAL4-->
-		<li class="list-inline-item">
-			<div class="review pl-3">
-			<img class="slide image-fluid float-left pr-3" src="images/sharon-mccutcheon-Z_t6gnbLmXA-unsplash.jpg" alt="testimonial given by a mother holding her baby and two friends at her side"><h5>Sharon McCutcheon</h5><h6>We are thrilled to support CRS with a specialty plate. Thank you for great service!</h6>
+<!--TESTIMONIAL4, Sharon McCutcheon-->
+		<li class=" list-inline-item green">
+			<img src="images/sharon-mccutcheon-Z_t6gnbLmXA-unsplash.jpg" alt="testimonial given by a mother holding her baby and two friends at her side">
+				<div class=" pink w-100">
+				<h5>Sharon McCutcheon</h5><h6>We are thrilled to support CRS with a specialty plate. Thank you for great service!</h6>
 		</div>
 		</li>
 								
-<!--TESTIMONIAL55-->
-		<li class="list-inline-item">
-			<div class="review pl-3">
-			<img class="slide image-fluid float-left pr-3" src="images/foto-sushi-6anudmpILw4-unsplash.jpg" alt="testimonial given by a man in his early early fifties" ><h5>Zulmaury Saavedra</h5><h6>Buying a specialty plate was the best idea I ever had. I’m so glad to have found you all!</h6>
+<!--TESTIMONIAL55, Zulmaury Saavedra-->
+		<li class=" list-inline-item green">
+			<img src="images/zulmaurySaavedra.jpg" alt="testimonial given by a man in his early early fifties" >
+				<div class=" pink w-100">
+				<h5>Zulmaury Saavedra</h5><h6>Buying a specialty plate was the best idea I ever had. I’m so glad to have found you all!</h6>
 			</div>
 		</li>
 								
-<!--TESTIMONIAL6-->
-		<li class="list-inline-item">
-			<div class="review pl-3">
-			<img class="slide image-fluid float-left pr-3" src="images/natalia-barros-3TnUCHoqMHM-unsplash.jpg" alt="testimonial given by a couple in thier early thirties"><h5>Omid Armin</h5><h6>I bought a specialty plate last year and I love the way it looks on the car; its also a great conversation piece. I would recommend this to everyone.Thanks!</h6>
+<!--TESTIMONIAL6, Omid Armin-->
+		<li class=" list-inline-item green">
+			<img src="images/natalia-barros-3TnUCHoqMHM-unsplash.jpg" alt="testimonial given by a couple in thier early thirties">
+				<div class=" pink w-50">
+				<h5>Omid Armin</h5><h6>I bought a specialty plate last year and I love the way it looks on the car; its also a great conversation piece. I would recommend this to everyone.Thanks!</h6>
 		</div>
 		</li>
 		
 	</ul>		
 	</div><!---row --->
+	<section>
 	</div><!---container --->
-	</section>
+	
 
 <!---Footer--->
 	<footer>
@@ -274,10 +414,13 @@
 		</div><!---container --->
 	</footer>
 	
+
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-<!--	<script src="js/main.js"></script>-->
+	<script src="css/bootstrap.css"></script>
+	<script src="js/main.js"></script>
 	
 </body>
 </html>
