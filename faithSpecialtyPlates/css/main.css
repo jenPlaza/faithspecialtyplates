@@ -1,3 +1,90 @@
 <!DOCTYPE html>
 @charset "UTF-8";
 /* Featured Specialty Plates CSS Document */
+
+/***********************Typography****************/
+body, p {
+    font-family: Montserrat, sans-serif;
+	color:#5b4618;
+}
+	h1{
+	font-family: Bold Roboto, sans-serif;
+		padding:2%;
+}
+/*	h2{
+	font-size: 1.75em;
+		padding:10px;
+}*/
+	h2 bold{
+		font-size: 2.25em;
+	}
+	/*h3{
+	font-size: 1.5rem;
+		padding:25px;
+}
+	h5{
+		font-size: 1rem;
+	}*/
+	h6{
+		font-size: 0.75rem;
+		line-height: 1.7;
+	}
+	
+	em{
+		color:#520101;
+		font-style: normal;
+	}
+	
+/***********************Body**********************/
+
+html,body,header,.view {
+  width: 100%;
+   height:0px;
+}
+nav
+	{
+	text-transform: uppercase;
+    }
+
+.bg-dark {
+  background-color: #221A09 !important;
+	}
+.bg-gray {
+  background-color: #D6D5D2 !important;
+	}
+.bg-primary {
+  background-color: #520101 !important;
+	}
+.bg-danger{
+  background-color: #BC2134 !important;	
+	}
+.bg-brown{
+  background-color: #5B4618 ;	
+	}
+.text-brown{
+	color: #5B4618 ;	
+}
+a {
+  color: #520101;
+}
+
+.w-33 {
+  width: 33% ;
+}
+
+	
+/***********************Navigation***************/
+
+ .navbar-brand{
+    width:80%;
+    height:auto;
+	}
+.navbar-nav { 
+	display: flex; 
+	flex-flow: row nowrap;
+	margin-left:5%;
+	}
+.navbar-light .navbar-nav .nav-link {
+	font: bold 1.4rem Roboto, sans-serif;
+	}
+	
