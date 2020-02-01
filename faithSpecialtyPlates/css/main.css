@@ -55,7 +55,7 @@ nav
 .bg-primary {
   background-color: #520101 !important;
 	}
-.bg-danger{
+.bg-danger, .btn-danger{
   background-color: #BC2134 !important;	
 	}
 .bg-brown{
@@ -70,6 +70,9 @@ a {
 
 .w-33 {
   width: 33% ;
+}
+.w-65 {
+  width: 65% ;
 }
 
 	
@@ -86,5 +89,10 @@ a {
 	}
 .navbar-light .navbar-nav .nav-link {
 	font: bold 1.4rem Roboto, sans-serif;
+	}
+
+/**************Modal**************/
+.modal-footer{
+	height:25px;
 	}
 	

@@ -12,283 +12,315 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <title>Order Now | Featured Specialty Plates</title>
-	<style>
-					.clearCart {
-  		color: #520101;
-		border: 3px solid #520101;
-		padding:20px 105px 20px 105px;
-		border-radius: 7px;
-		margin-top:-40%;
-						
-}
-					
-		.buyCart {
-  		border-radius: 7px;
-  		background: #520101;
-  		padding:20px 105px 20px 105px;
-  		color: white;
-		border:none;								
-}
-					
-		.test2{
-		margin-top:42%;
-		}
-		
-		/*img{
-			width:300px;
-		}*/
-				</style>
+
 </head>
 <body>
 	
 <!--Navigation-->
     <header>
-
-          <!--Menu BAr-->
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparent scrolling-navbar">
-            <div class="container ">
-				  <a class="navbar-brand" href="index.html"><img class=" w-50 ml-0" src="images/faithSpecialtyPlatesLogoWhite.png" alt="Faith Specialty Plates Logo" /></a>
-              
+<!--Menu BAr-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-transparent scrolling-navbar">
+         <div class="container ">
+			<a class="navbar-brand" href="index.html"><img class=" w-50 ml-0" src="images/faithSpecialtyLogo.png" alt="Faith Specialty Plates Logo" /></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+               <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse bg-transparent flex" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-     		<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link active" href="index.html">Home </a></h5></li>
-			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link active" href="about.html">About</a></h5></li>
-			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="featured.html">Featured</a></h5></li>
-			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="contact.html">Contact</a></h5></li>
+     				<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link active" href="index.html">Home </a></h5></li>
+					<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link active" href="about.html">About</a></h5></li>
+					<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="featured.html">Featured</a></h5></li>
+					<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="contact.html">Contact</a></h5></li>
                 </ul>
               </div>
             </div>
           </nav>
-			</header>
+	</header>
 
-<div class="container">
 <!---Features Specialty Plates--->
-	<div class="col">
-	<section id="featuredSP" class="h-auto bg-transparent">
-	<div class="container-fluid ">
-	<div class="row ">
-		<h1 class="text-center">Order Now</h1>
-		<h3 class="noHSpaceOrder text-center pb-5"><small>Buy Your Specialty Plate Today!</small></h3>
-		</div><!---row --->
-		<div class="row">
-			<p>1. PAY - Make your choice of transaction and make your secure payment. 
-					<br/>
-				2. SUBMIT REGISTRATION INFORMATION - After your payment clears, you receive an email to process your registration information online. 
-					<br/>
-				3. DISPLAY YOUR NEW PLATE - Receive your tag directly from a Florida Tax Collector by USPS and put your new tag with its new decal on your car and dispose of your old one.</p>
-		</div>
-		
-<!--registration without annual------------------------------------------------------------------------------------------->	
-		
-<!---No Renewal Popup Form--->
-			<form id="noRenewal" class="mt-5 bg-white rounded-top rounded-bottom container-fluid pl-0 pr-0"  method= "post">
-			<div class="container-fluid ">
-		    <div class="col">
-			<header class="bg-transparent">
-			<div class="row">
-			<h3><b>Your Shopping Cart</b></h3>
-			</div>
-			</header>
-				<section class="bg-transparent">
-			<div class="table-responsive ">			
-			<table class="table borderless">
- 				 <thead>
-					<tr>
-    				<th scope="col">#</th>
-    				<th scope="col">Item</th>
-     				<th scope="col">Description</th>
-	 				<th scope="col">Price</th>
-  					</tr>
-  				</thead>
-  			<tbody>
-    				<tr>
-      				<th scope="row">1</th>
-      				<td>999910876</td>
-      				<td>Specialty License Plate (no annual registration renewal)</td>
-      				<td>$100.00</td>
-    				</tr>
-  			</tbody>
-	
-				<thead>
-					<tr>
-     				<th scope="row"></th>
-      				<th scope="col"></th>
-      				<th scope="col"></th>
-	   				<th scope="col">Total</th>
-    				</tr>
-  				</thead>
-  			<tbody>
-    				<tr>
-     				<th></th>
-      				<td></td>
-      				<td></td>
-      				<td>$100.00</td>
-    				</tr>
-  				</tbody>
-				</table>
-				</div>					
-				<br/><br/>
-				</section>
-				<section>
-<!--form buttons-->
-				
-				<div class="row test2">	
-					<button id="clearBtnNoRenewal" class=" button clearCart mt-3 w-100 mx-auto" type="button" onclick="window.location.href='about.html';">Clear Cart</button>
-					<button id="checkBtnNoRenewal" class="button buyCart mx-auto w-100 mt-3" type="button">Checkout</button>
-				</div>
-				</section>
-				</div>
-			</div>	
-		
-				<!---footer--->
-					<footer class="cartFooter rounded-bottom container-fluid"></footer>
-				</form>	
-		
-		
-<!---Registration Form--->
-		<div class="row justify-content-center">	
-		
-			<section class="registration mt-5 pl-5 pr-5 w-50 ">
-			<div class=" col pt-5 pb-5">
-			<figure>
-				<a href="/"><img class="plates image-fluid w-100 h-auto pb-2" src="images/arizonaPlate.jpg" alt="Arizona Plate" /></a>
-				<figcaption class="text-center pt-1">Specialty License Plate (no Annual Registration renewal) $ 100.00</figcaption>
-			</figure>
-			<br />
-				<button id="checkBtnNoRenew" class="button cta text-center w-100" type="button">Buy Now</button>
-			<br />
-			</div>
-			</section>
-		
-			<br /><br /><br /><br />
-								
-<!--registration with annual------------------------------------------------------------------------------------------->	
-<!---Thank you Popup Form--->
-			<form id="thankyou" class="mt-5 bg-white" method= "post">
-				<a href="index.html"><b>X</b></a>
-			<div class="container-fluid ">
-			<div class="row">
-			<h3><b>Thank you your order has been Processed.</b></h3>
-			</div>
+	<div class="container-fluid mt-5 pt-5">
+		<section>
 			
-			<div class="row cart">	
-			<h4>Your order is processed online and your new Florida specialty license plate is then issued and mailed to you directly from a Florida County Tax Collector’s Office processed through the Florida Department of Revenue and the Florida Department of Highway Safety and Motor Vehicles.
-			 </h4>
-			</div>
-				
-			</div>
-				<footer class="cartFooter"></footer>
-			</form>				
-			
-<!---Renewal Popup Form--->
-			
-			<form id="renewal" class="mt-5 bg-white rounded-top rounded-bottom container-fluid pl-0 pr-0"  method= "post">
-			<div class="container-fluid ">
-		    <div class="col">
-			<header class="bg-transparent">
+<!--row 1-->
 			<div class="row">
-			<h3><b>Your Shopping Cart</b></h3>
-			</div>
-			</header>
-				<section class="bg-transparent">
-			<div class="table-responsive ">			
-			<table class="table borderless">
- 				 <thead>
-					<tr>
-    				<th scope="col">#</th>
-    				<th scope="col">Item</th>
-     				<th scope="col">Description</th>
-	 				<th scope="col">Price</th>
-  					</tr>
-  				</thead>
-  			<tbody>
-    				<tr>
-      				<th scope="row">1</th>
-      				<td>999910877</td>
-      				<td>Specialty License Plate (no annual registration renewal)</td>
-      				<td>$150.00</td>
-    				</tr>
-  			</tbody>
-	
-				<thead>
-					<tr>
-     				<th scope="row"></th>
-      				<th scope="col"></th>
-      				<th scope="col"></th>
-	   				<th scope="col">Total</th>
-    				</tr>
-  				</thead>
-  			<tbody>
-    				<tr>
-     				<th></th>
-      				<td></td>
-      				<td></td>
-      				<td>$150.00</td>
-    				</tr>
-  				</tbody>
-				</table>
-				</div>					
-				<br/><br/>
-				</section>
-				<section>
-<!--form buttons-->
-				
-				<div class="row test2">	
-					<button id="clearBtnRenewal" class="button clearCart" type="button" onclick="window.location.href='about.html';">Clear Cart</button>
-					<button id="checkBtnRenewal" class="button buyCart" type="button">Checkout</button>
-				</div>
-				</section>
-				</div>
-			</div>	
-		
-				<!---footer--->
-					<footer class="cartFooter rounded-bottom container-fluid"></footer>
-				</form>				
+			<div class="col-auto pl-5 pb-5 pt-5">
+				<h1><em>Order Now</em></h1>
+				<h3><small><em>Buy Your Specialty Plate Today!</em></small></h3>
+			</div><!---col --->
+			</div><!---row --->
+			
+<!--row 2-->
+			<div class="justify-content-center">
+			<div class="row pl-5 pr-5">
+				<p>1. PAY - Make your choice of transaction and make your secure payment. 
+						<br/>
+					2. SUBMIT REGISTRATION INFORMATION - After your payment clears, you receive an email to process your registration information online. 
+						<br/>
+					3. DISPLAY YOUR NEW PLATE - Receive your tag directly from a Florida Tax Collector by USPS and put your new tag with its new decal on your car and dispose of your old one.</p>
+			</div><!---row --->
 
-<!---Registration Form--->
-			<section class="registration mt-5 pl-5 pr-5 w-50">
-			<div class=" col pt-5 pb-5">
-			<figure>
-				<a href="/"><img class="plates image-fluid w-100 h-auto pb-2" src="images/grandCanyonPlate.jpg" alt="Grand Canyon Plate" /></a>
-				<figcaption class="text-center pt-1">Specialty License Plate with Annual Registration Renewal $150.00</figcaption>
-			</figure>
+<!--row 3-->				
+<!---column 1, Registration Form--->
+<!--registration without annual------------------------------------------------------------------------------------------->	
+			<div class="row p-1 ml-md-5">	
+			<div class="col-sm-10 col-md-5 col-lg-4 mt-5 pt-5 pb-5 w-50 bg-gray m-4">
+				<section>
+					<figure>
+					<a href="/"><img class="w-100 h-auto pb-2" src="images/arizonaPlate.jpg" alt="Arizona Plate" /></a>
+					<figcaption class="text-center pt-1 w-100">Specialty License Plate <br /> (no Annual Registration renewal) $100.00</figcaption>
+					</figure>
+					<br />
+					
+<!--BUTTON-->
+					<button id="checkBtnNoRenew" type="button" class="button btn btn-danger w-100" data-toggle="modal" data-target="#SCWORenewal" >Buy Now</button>
+<!-- No Renewal Modal -->
+  					<div class="modal fade" id="SCWORenewal">
+    				<div class="modal-dialog modal-lg">
+						
+      				<div class="modal-content">
+        			<div class="modal-header">
+          				<h4 class="modal-title"><b>Your Shopping Cart</b></h4>
+        			</div>
+        
+        			<div class="modal-body">
+          			<div class="table-responsive ">			
+						<table class="table borderless">
+ 				 			<thead>
+								<tr>
+								<th scope="col">#</th>
+								<th scope="col">Item</th>
+								<th scope="col">Description</th>
+								<th scope="col">Price</th>
+								<th scope="col">Qty</th>
+								<th scope="col">Subtotal</th>
+								</tr>
+  							</thead>
+  						<tbody>
+								<tr>
+								<th scope="row">1</th>
+								<td>999910876</td>
+								<td>Specialty License Plate (no annual registration renewal)</td>
+								<td id="one">$100.00</td>
+								<td>
+									<div class="col-4 col-sm-4 col-md-4">
+										<div id="two" class="quantity">
+											<input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty" size="4">
+										</div>
+									</div>
+								</td>
+								<td>$100.00</td>
+								</tr>
+						</tbody>
+
+							<thead>
+								<tr>
+								<th scope="row"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col"></th>
+								<th scope="col">Total</th>
+								</tr>
+							</thead>
+						<tbody>
+								<tr>
+								<th></th>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>$100.00</td>
+								</tr>
+						</tbody>
+					</table>
+				</div>				
+			</div>
+
+			<div class="p-5">
+				<button type="button" class="btn button bg-transparent text-dark border-dark float-left" data-toggle="modal" data-target="#thankyouClear" data-dismiss="modal">Clear Cart</button>
+				<button type="button" class="btn button btn-danger float-right" data-toggle="modal" data-target="#thankyouCheck" data-dismiss="modal">Checkout</button>
+			</div>
+
+<!-- Modal footer -->
+			<div class="modal-footer rounded-bottom bg-brown"></div>
+        
+      </div>
+    </div>
+  </div>
+			    <br />
+			</section> 
+		</div>
+			
+
+<!---column 2, Registration Form--->
+<!--registration with annual------------------------------------------------------------------------------------------->	
+		
+		<div class="col-sm-10 col-md-5 col-lg-4 mt-5 pt-5 pb-5 w-50 bg-gray m-3">
+			<section>
+				<figure>
+					<a href="/"><img class="w-100 h-auto pb-2" src="images/grandCanyonPlate.jpg" alt="Grand Canyon Plate" /></a>
+					<figcaption class="text-center pt-1 w-100">Specialty License Plate <br /> (with Annual Registration renewal) $150.00</figcaption>
+				</figure>
 			<br />
 		
-<!--***BUTTON 2******--->
-			<button id="checkBtnRenew" class="button cta text-center w-100" type="button">Buy Now</button>
-			<br />
-			</div>
-		</section>
-					 
+<!--BUTTON-->
+			<button id="checkBtnRenew" type="button" class="button btn btn-danger w-100" data-toggle="modal" data-target="#SCWRenewal" >Buy Now</button>
+<!-- The Modal -->
+		  <div class="modal fade" id="SCWRenewal">
+			<div class="modal-dialog modal-lg w-sm-75 w-lg-100">
+			  <div class="modal-content">
+
+				<div class="modal-header">
+				  <h4 class="modal-title"><b>Your Shopping Cart</b></h4>
+				</div>
+
+				<div class="modal-body">
+				  <div class="table-responsive ">			
+					<table id="table" class="table borderless">
+						 <thead>
+							<tr>
+							<th scope="col">#</th>
+							<th scope="col">Item</th>
+							<th scope="col">Description</th>
+							<th scope="col">Price</th>
+							<th scope="col">Qty</th>
+							<th scope="col">Subtotal</th>
+							</tr>
+						</thead>
+					<tbody>
+							<tr>
+							<th scope="row">1</th>
+							<td>999910877</td>
+							<td>Specialty License Plate (no annual registration renewal)</td>
+							<td>$150.00</td>
+							<td>
+								<div class="col-4 col-sm-4 col-md-4">
+										<div id="four" class="quantity">
+											<input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty" size="4">
+										</div>
+									</div>
+								</td>
+								<td>$150.00</td>
+							</tr>
+					</tbody>
+
+						<thead>
+							<tr>
+							<th scope="row"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+							<th scope="col">Total</th>
+							</tr>
+						</thead>
+					<tbody>
+							<tr>
+							<th></th>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>
+
+								<span id="val"></span>
+								</td>
+							<td>$150.00</td>
+							</tr>
+						</tbody>
+						</table>
+					</div>				
+				</div>
+		  
+		  <div class="p-5">
+		  <button type="button" class="btn button bg-transparent text-dark border-dark float-left" data-toggle="modal" data-target="#thankyouClear" data-dismiss="modal">Clear Cart</button>
+			<button type="button" class="btn button btn-danger float-right" data-toggle="modal" data-target="#thankyouCheck" data-dismiss="modal">Checkout</button>
+        </div>
+
+<!-- Modal footer -->
+        <div class="modal-footer rounded-bottom bg-brown"></div>
+        
+      </div>
+    </div>
+  </div>
+			    <br />
+			</section>
+		</div>
+
+<!-- Thankyou Clear Modal -->
+  <div class="modal fade" id="thankyouCheck">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Thank you your order has been Processed.</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>Your order is processed online and your new Florida specialty license plate is then issued and mailed to you directly from a Florida County Tax Collector’s Office processed directly by the Florida Department of Revenue and the Florida Department of Highway Safety and Motor Vehicles.
+			 </h4>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer rounded-bottom bg-brown"></div>
+        
+      </div>
+    </div>
+  </div>
+				
+<!-- Thankyou Checkout Modal -->
+  <div class="modal fade" id="thankyouClear">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Thank you your order has been deleted.</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <h4>We hope that your time with us has been pleasant and hope to see you soon.
+			 </h4>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer rounded-bottom bg-brown"></div>
+        
+      </div>
+    </div>
+  </div>
+  		
+					
 <!--verbiage before testimonials-->
-			<section class="verbiage mt-5">
-			<div class=" row ">
+			<div class="col-11 pt-5">
+				<section >
 				<p>
 					Your order is processed online and your new Florida specialty license plate is then issued and mailed to you directly from a Florida County Tax Collector’s Office processed through the Florida Department of Revenue and the Florida Department of Highway Safety and Motor Vehicles.
 					<br/><br/>   
 					If you just need to renew your existing tag, please visit your local County Tax Collector, DMV or private tag agency or the official Florida Highway Safety and Motor Vehicles website: gorenew.com (additional convenience fees apply.)
 				</p>
-			</div>
+			
 			</section>
-		
-		</div><!---row --->
-	</div><!---col --->
+				</div>
+		</div>
+			</div>
 	</section> 
-	</div><!---col --->
-	</div>
+			
+	</div><!---container --->
 	
 	<br/>
 	<br/>
 	<hr />
 	
 <!------------------------------------------------------------------Testimonials---------------------------------------------------------------------->
-	<div class="container-fluid bg-white text-dark pb-5">
+	<div class="container-fluid bg-white text-brown pb-5">
 		<section>
 		<div class="row">
-		<h1 class="mt-4 pb-4 ml-4">Testimonials</h1>
+		<h1 class="mt-4 pb-4 ml-4"><em>Testimonials</em></h1>
 	</div><!---row --->
 	<div class="row">	
 
@@ -331,7 +363,6 @@
 	</section>
 	</div><!---container --->
 	
-
 <!---Footer--->
 	<footer>
 		<div class="container-fluid bg-brown pt-5">
@@ -352,12 +383,9 @@
 		</div><!---container --->
 	</footer>
 	
-
-	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="css/bootstrap.css"></script>
 	<script src="js/main.js"></script>
 	
 </body>
