@@ -75,7 +75,52 @@
 					<button id="checkBtnNoRenew" type="button" class="button btn btn-danger w-100" data-toggle="modal" data-target="#SCWORenewal" >Buy Now</button>
 <!-- No Renewal Modal -->
   					<div class="modal fade" id="SCWORenewal">
-    				<div class="modal-dialog modal-lg">
+					<div class="modal-dialog modal-lg w-sm-75 w-lg-100">
+			  <div class="modal-content">
+
+				<div class="modal-header">
+				  <h4 class="modal-title"><b>Your Shopping Cart</b></h4>
+				</div>
+
+				<div class="modal-body">
+				  <div class="table-responsive">	
+						<table class="shoppingCart" class="table borderless">
+ 				 			<thead>
+							<tr class>
+							<th class="border-0" scope="col">#</th>
+							<th class="border-0" scope="col">Item</th>
+							<th class="border-0" scope="col">Description</th>
+							<th class="border-0" scope="col">Price</th>
+							<th class="border-0" scope="col">Qty</th>
+							</tr>
+							</thead>	
+					<tbody>
+								<tr>
+								<th scope="row">1</th>
+								<td class="pr-5">999910876</td>
+								<td>Specialty License Plate (no annual registration renewal)</td>
+								<td ><input class="border-0" type="num" name="price" value="100.00" readonly/></td>
+									<div class="col-4 col-sm-4 col-md-4">
+										<td><input value ="0" type="num" name="num"></td>
+									</div>
+									</tr>
+
+								<tr>
+ 							<td>Total: </td>
+							<td><span id="total"></span></td>
+							</tr>
+						</tbody>
+					</table>
+					  
+					</div>				
+				</div>	
+						
+						
+						
+						
+						
+						
+    				<!--<div class="modal-dialog modal-lg">
 						
       				<div class="modal-content">
         			<div class="modal-header">
@@ -83,16 +128,15 @@
         			</div>
         
         			<div class="modal-body">
-          			<div class="table-responsive ">			
-						<table id="table" class="table borderless">
+          			<div class=".table-responsive">			
+						<table class="shoppingCart" class="table borderless">
  				 			<thead>
-							<tr>
+							<tr class>
 							<th class="border-0" scope="col">#</th>
 							<th class="border-0" scope="col">Item</th>
 							<th class="border-0" scope="col">Description</th>
 							<th class="border-0" scope="col">Price</th>
 							<th class="border-0" scope="col">Qty</th>
-							<th class="border-0" scope="col">Subtotal</th>
 							</tr>
 							</thead>	
 					<tbody>
@@ -100,66 +144,20 @@
 								<th scope="row">1</th>
 								<td>999910876</td>
 								<td>Specialty License Plate (no annual registration renewal)</td>
-								<td>$100.00</td>
-								<td>
-									<div class="col-4 col-sm-4 col-md-4 orange">
-										<div id="two" class="quantity red">
-											<input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty blue" >
-										</div>
+								<td ><input class="border-0" type="num" name="price" value="100.00" readonly/></td>
+									<div class="col-4 col-sm-4 col-md-4">
+										<td><input value ="0" type="num" name="num"></td>
 									</div>
-								</td>
-								<td>$100.00</td>
-								</tr>
-						</tbody>
-				</table>	
-						<table class="table borderless mt-5">
- 				 			<thead>
-								<tr class="float-right">
-							<th scope="row">Total</th>
+									</tr>
+
+								<tr>
+ 							<td>Total: </td>
+							<td><span id="total"></span></td>
 							</tr>
-							</thead>
-							<tbody>
-								<tr class="float-right">
-								<th  class="border-0" scope="col"></th>
-								<td class="border-0">$100.00</td>
-								</tr>
-						
-						 <span id="val" class="orange"></span>
-						
-						
-						<style>
-							.red{
-								border: 1px solid red;
-							}
-							.blue{
-								border: 1px solid blue;
-							}
-							.orange{
-								border: 1px solid orange;
-							}
-						</style>
-						
-						 
-        
-        <script>
-            
-            var table = document.getElementById("table"), sumVal = 0;
-            
-           for(var i = 1; i < table.rows.length; i++)
-            {
-                sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
-            }
-            
-            document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
-            console.log(sumVal);
-            
-        </script>
-						
-						
 						</tbody>
 					</table>
 				</div>				
-			</div>
+			</div>-->
 
 			<div class="p-5">
 				<button type="button" class="btn button bg-transparent text-dark border-dark float-left" data-toggle="modal" data-target="#thankyouClear" data-dismiss="modal">Clear Cart</button>
@@ -200,49 +198,35 @@
 				</div>
 
 				<div class="modal-body">
-				  <div class="table-responsive">			
-						 <table class="table borderless">
- 				 			<thead >
-							<tr>
+				  <div class="table-responsive">	
+						<table class="shoppingCart" class="table borderless">
+ 				 			<thead>
+							<tr class>
 							<th class="border-0" scope="col">#</th>
 							<th class="border-0" scope="col">Item</th>
 							<th class="border-0" scope="col">Description</th>
 							<th class="border-0" scope="col">Price</th>
 							<th class="border-0" scope="col">Qty</th>
-							<th class="border-0" scope="col">Subtotal</th>
 							</tr>
-							</thead>
+							</thead>	
 					<tbody>
 								<tr>
 								<th scope="row">1</th>
-								<td>999910877</td>
-							<td>Specialty License Plate (no annual registration renewal)</td>
-							<td>$150.00</td>
-							<td>
-								<div class="col-4 col-sm-4 col-md-4">
-										<div class="quantity">
-											<input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty" />
-										</div>
+								<td class="pr-5">999910877</td>
+								<td>Specialty License Plate (no annual registration renewal)</td>
+								<td ><input class="border-0" type="num" name="priceR" value="150.00" readonly/></td>
+									<div class="col-4 col-sm-4 col-md-4">
+										<td><input value ="0" type="num" name="numR"></td>
 									</div>
-								</td>
-								<td>$150.00</td>
-							</tr>
-						</tbody>
-				</table>	
-						<table class="table borderless mt-5">
- 				 			<thead>
-								<tr class="float-right">
-							<th scope="row">Total</th>
-							</tr>
-							</thead>
-							<tbody>
-								<tr class="float-right">
-								<th class="border-0" scope="col"></th>
-								<td class="border-0">$150.00</td>
-								</tr>
+									</tr>
 
+								<tr>
+ 							<td>Total: </td>
+							<td><span id="totalSC"></span></td>
+							</tr>
 						</tbody>
-						</table>
+					</table>
+					  
 					</div>				
 				</div>
 		  
