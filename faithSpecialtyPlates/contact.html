@@ -11,23 +11,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <link href="css/main.css" rel="stylesheet" type="text/css">
-<title>On Sale | Featured Specialty Plates</title>
+<title>Contact Us | Featured Specialty Plates</title>
 
-	<style>
-		.red{
-			border:1px solid red;
-		}
-		.pink{
-			border:1px solid pink;
-		}
-		.blue{
-			border:1px solid blue;
-		}
-		.green{
-			border:1px solid green;
-		}
-	</style>
-	
 </head>
 <body>
 	
@@ -35,17 +20,17 @@
     <header>
 
           <!--Menu BAr-->
-          <nav class="navbar navbar-expand-lg navbar-light bg-transparent scrolling-navbar">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-transparent scrolling-navbar">
             <div class="container ">
-				  <a class="navbar-brand" href="index.html"><img class=" w-50 ml-0" src="images/faithSpecialtyLogo.png" alt="Faith Specialty Plates Logo" /></a>
+				  <a class="navbar-brand " href="index.html"><img class=" w-50 ml-0" src="images/faithSpecialtyPlatesLogoWhite.png" alt="Faith Specialty Plates Logo" /></a>
               
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse bg-transparent flex" id="navbarSupportedContent">
+              <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
      		<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link active" href="index.html">Home </a></h5></li>
-			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link active" href="about.html">About</a></h5></li>
+			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="about.html">About</a></h5></li>
 			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="featured.html">Featured</a></h5></li>
 			<li class="nav-item pr-sm-5 pr-lg-4"><h5><a class="nav-link" href="contact.html">Contact</a></h5></li>
                 </ul>
@@ -53,52 +38,92 @@
             </div>
           </nav>
 			</header>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<div class="container-fluid">
-		<section>
-			<div class="row">
+	
+	<!--Main-->
+	<div class="container-fluid p-0">
+		<main>
+	<!-- Background Image -->
+			<div class="view text-white h-100 w-100 pl-5 pt-5" style="background-image: url('css/bgImgs/contactImg.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+			<div class="row pl-5 pt-5">
 			<div class="col-auto pl-5 pt-5">
-				<h1><em>Contact US</em></h1>
-				<h3><small><em>We'd love to hear from you!</em></small></h3>
+				<h1>Contact US</h1>
+				<h3><small>We'd love to hear from you!</small></h3>
 			</div>
 			</div><!---row --->
 			
-		<div class="row p-5">
-		<p> Send us a question to <em>getstarted@featuresspecialtyplates.com</em> or send us a comment with the form below; we'll get in touch, as soon as possible.<br/> <br/><small> If this is not fast enough, just simply call us at (234)123-4567.</small></p>
+			<div class="row ml-5 pl-3 mt-4">
+			<div class="col-10 ml-lg-5 pl-lg-4">
+		<p> Send us a question to <b>getstarted@featuresspecialtyplates.com</b> or send us a comment with the form below; we'll get in touch, as soon as possible.<br/><small> If this is not fast enough, just simply call us at (234)123-4567.</small></p>
 		</div>
+			</div>
 		
-		<div class="col  w-75 h-auto">
-	<form class=" border-brown w-100 ml-3 rounded-bottom rounded-top blue">
-	<fieldset>
-	<p><em><label for="name" class="name">Name</label></em></p>
-	<input type="text" name="name" id="name">
-	<div class="container">
-		<p><em><label for="phone" class="phone">Phone Number</label></em></p>
-		<input type="text" name="phone" id="phone">
+	<!--contact Form-->
+	<div class="container-fluid w-75 pb-5 pt-3">
 		
-		<div class="cellRow">
-			<p><em><label for="email" class="email">Email Address</label></em></p>
-			<br />
-			<input  type="email" name="email" id="email">
-		</div>
-	</div>
-	<p><em><label for="help" class="help">How Can We Help?</label></em></p>
-	<input  type="text" name="help" id="help">
-
-	<h4><em><input type="submit" class="submit"/></em></h4>
+	<!--row 1-->
+	<div class="row">
+		<form class="mx-auto w-100 was-validated" method= "post">
+	<!--col 1, Name-->
+	<div class="form-group col-lg-12 m-0 p-0">
+    <label for="name">Name</label>
+    <input type="text" class="form-control form-control-danger form-control-success form-control-warning w-100" minlength="3" pattern="[a-zA-Z0-9\s]{3,}" id="name" aria-describedby="nameHelp" placeholder="Enter name" required/>
+		<div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field correctly.</div>
+  </div>
+			
+	<!--col 1, Phone-->
+	<div class="row">		
+	<div class="form-group col-6 m-0">
+    	<label for="phone">Phone</label>
+    	<input type="tel" class="form-control form-control-danger form-control-success form-control-warning w-100" id="phone" minlength="10" pattern="[0-9\s]{10,}" aria-describedby="phoneHelp" placeholder="Enter telephone" required />
+		<div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please include your area code.</div>
+ 		 </div>
 	
-	</fieldset>
-	</form>
-	</div> <!--column-->
-	</section>
+	<!--col 2, E-mail	-->
+ 		<div class="form-group col-6">
+   			 <label for="email">Email address</label>
+    		<input type="email" class="form-control form-control-danger form-control-success form-control-warning w-100" id="email" aria-describedby="emailHelp" placeholder="Enter email" required />
+			<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			<div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field with a valid email address.</div>
+	 		
+  		</div>
 	</div>
-	
-	<br/>
-	<br/>
-	<hr />
+			<!--col 2, Help-->
+	<div class="form-group col m-0 p-0">
+   		 <label for="message">How Can We Help?</label>
+    	 <input type="text" class="form-control form-control-danger form-control-successw-100" minlength="10" pattern="[a-zA-Z0-9\s]{10,}" id="message" aria-describedby="helpHelp" placeholder="Enter your message" required />
+		<small id="helpHelp" class="form-text text-muted">We are always here to help</small>
+		<div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field with a min of 10 characters.</div>
+    	
+  	</div>
+			
+ <button type="submit" class="btn bg-transparent text-white border-white mt-4 mb-4" data-toggle="modal" data-target="#contact">Submit</button>
+				
+<!----Thank you Modal--
+  <div class="modal fade" id="contact">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+		  
+       --Modal body--
+		<div class="modal-body w-100 bg-dark pl-5">
+				<h3 class="modal-title text-white mt-5">
+					<small class="ml-5 pl-5">Your Request Has Been Submitted.</small></h3>
+					<h1 class="ml-5 pl-5">Thank you for contacting us.</h1>
+				<button type="button" class="btn btn-danger " data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>-->
+			
+</form>
+	</div><!--row-->
+	</div> <!--container-->
+			</div>
+		</main>
+	</div>
 	
 	<!------------------------------------------------------------------Testimonials---------------------------------------------------------------------->
 	<div class="container-fluid bg-white text-brown pb-5">
