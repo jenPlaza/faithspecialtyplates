@@ -8,13 +8,6 @@ body, p {
 	font-family: Bold Roboto, sans-serif;
 		padding:2%;
 }
-	h2{
-	font-size: 1.75em;
-		padding:10px;
-}
-	h2 bold{
-		font-size: 2.25em;
-	}
 	h3{
 	font-size: 1.5rem;
 		padding:25px;
@@ -76,7 +69,7 @@ a {
 /***********************Navigation***************/
 
  .navbar-brand{
-    width:80%;
+    width:75%;
     height:auto;
 	}
 .navbar-nav { 
