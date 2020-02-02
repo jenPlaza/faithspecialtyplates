@@ -92,4 +92,11 @@ a {
 .modal-footer{
 	height:25px;
 	}
+
+/**************Contact Submit Btn**************/
+		form:valid .submit {
+  display: block; }
+
+form:invalid .submit{
+  display: none; }
 	

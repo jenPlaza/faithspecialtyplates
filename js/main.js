@@ -2,7 +2,7 @@
 window.addEventListener("load", function(){
 	
 	//instantiate singleton
-	let main = Main.getInstance();
+	Main.getInstance();
 });
 
 	class Main{
@@ -10,20 +10,20 @@ window.addEventListener("load", function(){
 		this.getNoRenewTotal();
 		this.getRenewTotal();
 	}
-	
+		
 	getNoRenewTotal(){
 		var price = document.getElementsByName('price');
         var quantity = document.getElementsByName('num');
 		var tot = 0;
 		
-			quantity[0].addEventListener("keyup", function() {
+			var handler = quantity[0].addEventListener("keyup", function() {
 
             if(price[0].value != "" && quantity[0].value != "")
 			{
              tot += parseInt(quantity[0].value) * parseInt(price[0].value);
             document.querySelector("#total").innerHTML = tot;
 			}
-	});	
+	});		
 }
 
 getRenewTotal(){
@@ -35,16 +35,16 @@ getRenewTotal(){
 
             if(priceR[0].value != "" && quantityR[0].value != "")
 			{
-             tot += parseInt(quantityR[0].value) * parseInt(priceR[0].value);
+             tot += parseFloat(quantityR[0].value) * parseFloat(priceR[0].value);
             document.querySelector("#totalSC").innerHTML = tot;
 			}
 	});	
 }
-
+		
 	static getInstance(){
 		if(!Main._instance){
 			Main._instance = new Main(); 
-			return Main._instance;
+			return Main._instance; 
 		}
 		else{
 			throw SyntaxError('Cannot create a second Course instance');
