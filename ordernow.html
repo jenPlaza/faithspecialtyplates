@@ -47,7 +47,7 @@
 			
 <!--row 1-->
 			<div class="row">
-			<div class="col-auto p-2 pt-2 ml-1 pl-sm-5 pb-3 pt-sm-4">
+			<div class="col-auto p-2 pt-2 ml-5 pl-sm-2 pb-3 pt-sm-4">
 				<h1><em>Order Now</em></h1>
 				<p><em>Buy Your Specialty Plate Today!</em></p>
 			</div><!---col --->
@@ -67,7 +67,7 @@
 <!---column 1, Registration Form--->
 <!--registration without annual------------------------------------------------------------------------------------------->	
 			<div class="row p-1 ml-md-5">	
-			<div class="col-sm-10 col-md-5 col-lg-4 mt-5 pt-5 pb-5 w-50 bg-gray m-4">
+			<div class="mx-auto col-10 col-md-5 col-lg-4 mt-5 pt-5 pb-5 w-50 bg-gray m-4">
 				<section>
 					<figure>
 					<img class="w-100 h-auto pb-2" src="images/arizonaPlate.jpg" alt="Arizona Plate" />
@@ -83,41 +83,51 @@
 			  <div class="modal-content">
 
 				<div class="modal-header">
-				  <h4 class="modal-title"><b>Your Shopping Cart</b></h4>
+				  <h4 class="modal-title p-2"><b>Your Shopping Cart</b></h4>
 				</div>
 
 				<div class="modal-body">
-				  <div class="table-responsive">	
-						<table class="shoppingCart" class="table borderless">
- 				 			<thead>
-							<tr class>
-							<th class="border-0" scope="col">#</th>
-							<th class="border-0" scope="col">Item</th>
-							<th class="border-0" scope="col">Description</th>
-							<th class="border-0" scope="col">Price</th>
-							<th class="border-0" scope="col">Qty</th>
-							</tr>
-							</thead>	
-					<tbody>
-								<tr>
-								<th scope="row">1</th>
-								<td class="pr-5">999910876</td>
-								<td>Specialty License Plate (no annual registration renewal)</td>
-								<td ><input class="border-0" type="num" name="price" value="100.00" readonly/></td>
-									<div class="col-4 col-sm-4 col-md-4">
-										<td><input value ="0" type="num" name="num"></td>
-									</div>
-									</tr>
-
-								<tr>
- 							<td>Total: </td>
-							<td><span id="total"></span></td>
-							</tr>
-						</tbody>
-					</table>
-					  
-					</div>				
-				</div>	
+					<div class="container-fluid">
+						<div class="col">
+							
+					<!--row 1-->
+					<div class="row pt-3">	
+					<div class="col ml-5"><b>#</b></div>
+					<div class="col">1</div>
+						</div><!--row-->
+						
+						<div class="row pt-3">	
+					<div class="col ml-5"><b>Item</b></div>
+						<div class="col">999910876</div>
+							</div><!--row-->
+							
+						<div class="row pt-3">		
+					<div class="col ml-5"><b>Description</b></div>
+						<div class="col">Specialty License Plate (no annual registration renewal)</div>
+							</div><!--row-->
+							
+						<div class="row pt-3">		
+					<div class="col ml-5"><b>Price</b></div>
+						<div class="col"><input class="border-0" type="num" name="price" value="100.00" readonly/></div>
+								</div><!--row-->
+							
+						<div class="row pt-3">			
+					<div class="col ml-5"><b>Qty</b></div>
+						<div class="col"><input value ="0" type="num" name="num"></div>
+					</div><!--row-->
+							
+							<hr/>
+							
+							
+						<div class="row">		
+					<div class="col text-right"><b>Total:</b></div>
+						<div class="col"><span id="total"></span></div>
+					</div><!--row-->	
+							
+						</div><!--col-->
+					</div><!--container-->
+					</div><!--MOdal Body-->
+						
 
 			<div class="p-5">
 				<button type="button" class="btn button bg-transparent text-dark border-dark float-left" data-toggle="modal" data-target="#thankyouClear" data-dismiss="modal">Clear Cart</button>
@@ -138,7 +148,7 @@
 <!---column 2, Registration Form--->
 <!--registration with annual------------------------------------------------------------------------------------------->	
 		
-		<div class="col-sm-10 col-md-5 col-lg-4 mt-5 pt-5 pb-5 w-50 bg-gray m-3">
+		<div class="mx-auto col-10 col-md-5 col-lg-4 mt-5 pt-5 pb-5 w-50 bg-gray m-3">
 			<section>
 				<figure>
 					<img class="w-100 h-auto pb-2" src="images/grandCanyonPlate.jpg" alt="Grand Canyon Plate" />
@@ -150,7 +160,7 @@
 			<button id="checkBtnRenew" type="button" class="button btn btn-danger w-100" data-toggle="modal" data-target="#SCWRenewal" >Buy Now</button>
 <!-- The Modal -->
 		  <div class="modal fade" id="SCWRenewal">
-			<div class="modal-dialog modal-lg w-sm-75 w-lg-100">
+			<div class="modal-dialog modal-lg">
 			  <div class="modal-content">
 
 				<div class="modal-header">
@@ -158,37 +168,47 @@
 				</div>
 
 				<div class="modal-body">
-				  <div class="table-responsive">	
-						<table class="shoppingCart" class="table borderless">
- 				 			<thead>
-							<tr class>
-							<th class="border-0" scope="col">#</th>
-							<th class="border-0" scope="col">Item</th>
-							<th class="border-0" scope="col">Description</th>
-							<th class="border-0" scope="col">Price</th>
-							<th class="border-0" scope="col">Qty</th>
-							</tr>
-							</thead>	
-					<tbody>
-								<tr>
-								<th scope="row">1</th>
-								<td class="pr-5">999910877</td>
-								<td>Specialty License Plate (no annual registration renewal)</td>
-								<td ><input class="border-0" type="num" name="priceR" value="150.00" readonly/></td>
-									<div class="col-4 col-sm-4 col-md-4">
-										<td><input value ="0" type="num" name="numR"></td>
-									</div>
-									</tr>
-
-								<tr>
- 							<td>Total: </td>
-							<td><span id="totalSC"></span></td>
-							</tr>
-						</tbody>
-					</table>
-					  
-					</div>				
-				</div>
+					<div class="container-fluid">
+						<div class="col">
+							
+					<!--row 1-->
+					<div class="row pt-3">	
+					<div class="col ml-5"><b>#</b></div>
+					<div class="col">1</div>
+						</div><!--row-->
+						
+						<div class="row pt-3">
+					<div class="col ml-5"><b>Item</b></div>
+						<div class="col">999910877</div>
+							</div><!--row-->
+							
+						<div class="row pt-3">	
+					<div class="col ml-5"><b>Description</b></div>
+						<div class="col">Specialty License Plate (no annual registration renewal)</div>
+							</div><!--row-->
+							
+						<div class="row pt-3">	
+					<div class="col ml-5"><b>Price</b></div>
+						<div class="col"><input class="border-0" type="num" name="priceR" value="150.00" readonly/></div>
+								</div><!--row-->
+							
+						<div class="row pt-3">		
+					<div class="col ml-5"><b>Qty</b></div>
+						<div class="col"><input value ="0" type="num" name="numR"></div>
+					</div><!--row-->
+							
+							<hr/>
+							
+							
+						<div class="row">		
+					<div class="col text-right"><b>Total:</b></div>
+						<div class="col"><span id="totalSC"></span></div>
+					</div><!--row-->	
+							
+						</div><!--col-->
+					</div><!--container-->
+					</div><!--MOdal Body-->
+				
 		  
 		  <div class="p-5">
 		  <button type="button" class="btn button bg-transparent text-dark border-dark float-left" data-toggle="modal" data-target="#thankyouClear" data-dismiss="modal">Clear Cart</button>
@@ -196,7 +216,7 @@
         </div>
 
 <!-- Modal footer -->
-        <div class="modal-footer rounded-bottom bg-brown"></div>
+        <div class="modal-footer mt-3 rounded-bottom bg-brown"></div>
         
       </div>
     </div>
