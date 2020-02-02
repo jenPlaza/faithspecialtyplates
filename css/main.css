@@ -77,9 +77,9 @@ a {
 	flex-flow: row nowrap;
 	margin-left:5%;
 	}
-.navbar-light .navbar-nav .nav-link {
-	font: 0.75rem Roboto, sans-serif;
-	}
+/*.navbar-light .navbar-nav .nav-link {
+	font: Roboto, sans-serif;
+	}*/
 
 /**************Modal**************/
 .modal-footer{
