@@ -87,7 +87,7 @@ a {
 	}
 
 /**************Contact Submit Btn**************/
-		form:valid .submit {
+form:valid .submit {
   display: block; }
 
 form:invalid .submit{
