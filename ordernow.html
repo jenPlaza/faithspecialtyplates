@@ -84,50 +84,78 @@
         
         			<div class="modal-body">
           			<div class="table-responsive ">			
-						<table class="table borderless">
+						<table id="table" class="table borderless">
  				 			<thead>
 							<tr>
-							<th scope="col">#</th>
-							<th scope="col">Item</th>
-							<th scope="col">Description</th>
-							<th scope="col">Price</th>
-							<th scope="col">Qty</th>
-							<th scope="col">Subtotal</th>
+							<th class="border-0" scope="col">#</th>
+							<th class="border-0" scope="col">Item</th>
+							<th class="border-0" scope="col">Description</th>
+							<th class="border-0" scope="col">Price</th>
+							<th class="border-0" scope="col">Qty</th>
+							<th class="border-0" scope="col">Subtotal</th>
 							</tr>
-
-							<tr>
-							<th scope="row"></th>
-							<th scope="col"></th>
-							<th scope="col"></th>
-							<th scope="col"></th>
-							<th scope="col"></th>
-							<th scope="col">Total</th>
-							</tr>
-						</thead>
+							</thead>	
 					<tbody>
 								<tr>
 								<th scope="row">1</th>
 								<td>999910876</td>
 								<td>Specialty License Plate (no annual registration renewal)</td>
-								<td id="one">$100.00</td>
+								<td>$100.00</td>
 								<td>
-									<div class="col-4 col-sm-4 col-md-4">
-										<div id="two" class="quantity">
-											<input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty" >
+									<div class="col-4 col-sm-4 col-md-4 orange">
+										<div id="two" class="quantity red">
+											<input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty blue" >
 										</div>
 									</div>
 								</td>
 								<td>$100.00</td>
 								</tr>
-						
-								<tr>
-								<th></th>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td></td>
-								<td>$100.00</td>
+						</tbody>
+				</table>	
+						<table class="table borderless mt-5">
+ 				 			<thead>
+								<tr class="float-right">
+							<th scope="row">Total</th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr class="float-right">
+								<th  class="border-0" scope="col"></th>
+								<td class="border-0">$100.00</td>
 								</tr>
+						
+						 <span id="val" class="orange"></span>
+						
+						
+						<style>
+							.red{
+								border: 1px solid red;
+							}
+							.blue{
+								border: 1px solid blue;
+							}
+							.orange{
+								border: 1px solid orange;
+							}
+						</style>
+						
+						 
+        
+        <script>
+            
+            var table = document.getElementById("table"), sumVal = 0;
+            
+           for(var i = 1; i < table.rows.length; i++)
+            {
+                sumVal = sumVal + parseInt(table.rows[i].cells[2].innerHTML);
+            }
+            
+            document.getElementById("val").innerHTML = "Sum Value = " + sumVal;
+            console.log(sumVal);
+            
+        </script>
+						
+						
 						</tbody>
 					</table>
 				</div>				
@@ -172,51 +200,47 @@
 				</div>
 
 				<div class="modal-body">
-				  <div class="table-responsive ">			
-					<table id="table" class="table borderless">
-						 <thead>
+				  <div class="table-responsive">			
+						 <table class="table borderless">
+ 				 			<thead >
 							<tr>
-							<th scope="col">#</th>
-							<th scope="col">Item</th>
-							<th scope="col">Description</th>
-							<th scope="col">Price</th>
-							<th scope="col">Qty</th>
-							<th scope="col">Subtotal</th>
+							<th class="border-0" scope="col">#</th>
+							<th class="border-0" scope="col">Item</th>
+							<th class="border-0" scope="col">Description</th>
+							<th class="border-0" scope="col">Price</th>
+							<th class="border-0" scope="col">Qty</th>
+							<th class="border-0" scope="col">Subtotal</th>
 							</tr>
-
-							<tr>
-							<th scope="row"></th>
-							<th scope="col"></th>
-							<th scope="col"></th>
-							<th scope="col"></th>
-							<th scope="col"></th>
-							<th scope="col">Total</th>
-							</tr>
-						</thead>
+							</thead>
 					<tbody>
-							<tr>
-							<th scope="row">1</th>
-							<td>999910877</td>
+								<tr>
+								<th scope="row">1</th>
+								<td>999910877</td>
 							<td>Specialty License Plate (no annual registration renewal)</td>
 							<td>$150.00</td>
 							<td>
 								<div class="col-4 col-sm-4 col-md-4">
-										<div id="four" class="quantity">
+										<div class="quantity">
 											<input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty" />
 										</div>
 									</div>
 								</td>
 								<td>$150.00</td>
 							</tr>
-						
-							<tr>
-							<th></th>
-							<td></td>
-							<td></td>
-							<td></td>
-							<td>&nbsp;</td>
-							<td>$150.00</td>
+						</tbody>
+				</table>	
+						<table class="table borderless mt-5">
+ 				 			<thead>
+								<tr class="float-right">
+							<th scope="row">Total</th>
 							</tr>
+							</thead>
+							<tbody>
+								<tr class="float-right">
+								<th class="border-0" scope="col"></th>
+								<td class="border-0">$150.00</td>
+								</tr>
+
 						</tbody>
 						</table>
 					</div>				
