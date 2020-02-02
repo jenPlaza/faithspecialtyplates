@@ -1,7 +1,4 @@
-<!DOCTYPE html>
-@charset "UTF-8";
 /* Featured Specialty Plates CSS Document */
-
 /***********************Typography****************/
 body, p {
     font-family: Montserrat, sans-serif;
@@ -11,20 +8,20 @@ body, p {
 	font-family: Bold Roboto, sans-serif;
 		padding:2%;
 }
-/*	h2{
+	h2{
 	font-size: 1.75em;
 		padding:10px;
-}*/
+}
 	h2 bold{
 		font-size: 2.25em;
 	}
-	/*h3{
+	h3{
 	font-size: 1.5rem;
 		padding:25px;
 }
 	h5{
 		font-size: 1rem;
-	}*/
+	}
 	h6{
 		font-size: 0.75rem;
 		line-height: 1.7;
