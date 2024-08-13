@@ -5,4 +5,4 @@ Faith Specialty Plates is a non-profit organization that helps to raise funds fo
 
 The website will be accessible for multiple device sizes. It will be designed with the mobile first approach and then work its way up in size. Once the website is running the site will be tested in multiple browsers, to provide the user with a seamless user experience. Visit https://jenplaza.github.io/faithspecialtyplates/about.html
 
-You can read full Project Synopsis, Design Process, and view wireframes at https://jennplaza.wordpress.com/portfolio/faith-specialty-plates/
+You can read full Project Synopsis and Design Process at https://jennplaza.wordpress.com/portfolio/faith-specialty-plates/; view High Fidelity wireframes https://jennplaza.wordpress.com/wp-content/uploads/2024/06/fsp_hiwireframe.png
